@@ -18,9 +18,9 @@
   "author": "FLS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rolling-scopes-school/nikitashakhovich-JSFE2022Q1/issues"
+    "url": "https://github.com/NikitaShakhovich/cake/issues"
   },
-  "homepage": "https://github.com/rolling-scopes-school/nikitashakhovich-JSFE2022Q1#readme",
+  "homepage": "https://github.com/NikitaShakhovich/cake#readme",
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
