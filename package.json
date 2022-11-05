@@ -1,7 +1,7 @@
 {
-  "name": "rs-stage2",
+  "name": "cake",
   "version": "1.0.0",
-  "description": "Private repository for @nikitashakhovich",
+  "description": "cake website",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rolling-scopes-school/nikitashakhovich-JSFE2022Q1.git"
+    "url": "https://github.com/NikitaShakhovich/cake"
   },
   "author": "FLS",
   "license": "ISC",
