@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+<html class="page" lang="ru">
+  <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.min.css">
 <!--    <link rel="icon" href="favicon.ico">-->
@@ -15,75 +15,332 @@
 </head>
 
 
-    <body>
-    <header class="page-header">
-    <div class="nav__container">
-        <div class="nav__item--logo">
-            <span class="visually-hidden">SITE NAME</span>
-            <svg class="page-header__logo" height="40px" width="50px">
-                <use xlink:href="svg/sprite.svg#logo"></use>
-            </svg>
-            <!--            <a class="page-header__logo" href="#"></a>-->
-        </div>
-        <nav class="page-header__nav nav page-header__nav--nojs">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link nav__link--active" href="#1">
-                        1
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#2">
-                        2
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#3">
-                        3
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#4">
-                        4
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#5">
-                        5
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="nav__toggle-block">
-            <div class="nav__switch-language">
-                <p class="nav__language nav__language-en" data-lang="en">en</p>
-                /
-                <p class="nav__language nav__language-ru" data-lang="ru">ru</p>
-            </div>
-            <div class="nav__toggle-theme">
-                <svg class="nav__toggle-theme-light nav__toggle-theme-light--target" data-theme="light" height="45px" width="45px">
-                    <use class="" xlink:href="svg/sprite.svg#sun"></use>
-                </svg>
-                <svg class="nav__toggle-theme-black nav__toggle-theme-light--target" data-theme="dark" height="45px" width="45px">
-                    <use class="" xlink:href="svg/sprite.svg#moon"></use>
-                </svg>
-            </div>
-            <div class="nav__toggle-menu">
-                <span class="nav__toggle"></span>
-                <span class="visually-hidden">Открыть меню</span>
-            </div>
-        </div>
+  <body class="page__body">
+  <header class="page-header">
+  <div class="nav__container">
+    <div class="nav__item--logo">
+      <span class="visually-hidden">Marzipan</span>
+      <svg class="page-header__logo" height="40px" width="50px">
+      <use xlink:href="svg/sprite.svg#logo"></use>
+      </svg>
+      <!--            <a class="page-header__logo" href="#"></a>-->
     </div>
+    <nav class="page-header__nav nav page-header__nav--nojs">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#1">Меню</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#2">Видео</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#3">Отзывы</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#4">Контакты</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#5">Доставка</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav__contacts">
+      <a class="nav__phone-icon">icon phone</a>
+      <p class="nav__phone-number">8 (029) 123-12-30</p>
+      <p class="nav__time-work">с 10:00 до 20:00</p>
+    </div>
+  </div>
 </header>
 
-    <main>
-        <img src="img/face.jpg" alt="car">
-        <p>hello</p>
-    </main>
-    <footer>
-    <p>ol</p>
+
+  <main class="page-main">
+    <section class="page-main__sections section-header">
+      <div class="section-header__container">
+        <div class="section-header__wrapper">
+          <p class="section-header__subtitle">Торты на заказ</p>
+          <h1 class="section-header__title">Marzipan</h1>
+          <p class="section-header__description">Только натуральные ингредиенты</p>
+          <button class="button">Заказать</button>
+        </div>
+      </div>
+    </section>
+    <section class="page-main__sections section-advantage">
+      <div class="section-advantage__container">
+        <h2 class="page-main__sections-title">Наши торты</h2>
+        <ul class="section-advantage__list">
+          <li class="section-advantage__item">
+            <div class="section-advantage__icon">Иконка</div>
+            <p class="section-advantage__title">Всегда свежие</p>
+            <p class="section-advantage__description">Мы готовим торты из самых свежих продуктов исключительно за день до желаемой даты</p>
+          </li>
+          <li class="section-advantage__item">
+            <div class="section-advantage__icon">Иконка</div>
+            <p class="section-advantage__title">Всегда натуральные</p>
+            <p class="section-advantage__description">Мы не используем искусственные красители, заменители сахара, яичный порошок и консерванты</p>
+          </li>
+          <li class="section-advantage__item">
+            <div class="section-advantage__icon">Иконка</div>
+            <p class="section-advantage__title">Всегда красивые</p>
+            <p class="section-advantage__description">Ягоды, фрукты, орехи, шоколад, крем, безе — декор наших тортов всегда аппетитный и привлекательный</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__sections section-menu">
+      <div class="section-menu__container">
+        <h2 class="page-main__sections-title">Меню</h2>
+        <div class="section-menu__slider">
+          <div class="section-menu__slider-left">слайд влево</div>
+          <div class="section-menu__cake">
+            <img class="section-menu__cake-img" src="#" alt="Cheesecake">
+            <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
+            <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
+            <div class="section-menu__cake-param">
+              <div>Вес:
+                <p class="section-menu__cake-weight">2кг</p>
+              </div>
+              <div>Цена:
+                <p class="section-menu__cake-price">65 руб.</p>
+              </div>
+            </div>
+            <button class="button button--order">Заказать</button>
+          </div>
+          <div class="section-menu__cake">
+            <img class="section-menu__cake-img" src="#" alt="Cheesecake">
+            <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
+            <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
+            <div class="section-menu__cake-param">
+              <div>Вес:
+                <p class="section-menu__cake-weight">2кг</p>
+              </div>
+              <div>Цена:
+                <p class="section-menu__cake-price">65 руб.</p>
+              </div>
+            </div>
+            <button class="button button--order">Заказать</button>
+          </div>
+          <div class="section-menu__cake">
+            <img class="section-menu__cake-img" src="#" alt="Cheesecake">
+            <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
+            <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
+            <div class="section-menu__cake-param">
+              <div>Вес:
+                <p class="section-menu__cake-weight">2кг</p>
+              </div>
+              <div>Цена:
+                <p class="section-menu__cake-price">65 руб.</p>
+              </div>
+            </div>
+            <button class="button button--order">Заказать</button>
+          </div>
+          <div class="section-menu__cake">
+            <img class="section-menu__cake-img" src="#" alt="Cheesecake">
+            <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
+            <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
+            <div class="section-menu__cake-param">
+              <div>Вес:
+                <p class="section-menu__cake-weight">2кг</p>
+              </div>
+              <div>Цена:
+                <p class="section-menu__cake-price">65 руб.</p>
+              </div>
+            </div>
+            <button class="button button--order">Заказать</button>
+          </div>
+          <div class="section-menu__cake">
+            <img class="section-menu__cake-img" src="#" alt="Cheesecake">
+            <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
+            <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
+            <div class="section-menu__cake-param">
+              <div>Вес:
+                <p class="section-menu__cake-weight">2кг</p>
+              </div>
+              <div>Цена:
+                <p class="section-menu__cake-price">65 руб.</p>
+              </div>
+            </div>
+            <button class="button button--order">Заказать</button>
+          </div>
+          <div class="section-menu__cake">
+            <img class="section-menu__cake-img" src="#" alt="Cheesecake">
+            <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
+            <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
+            <div class="section-menu__cake-param">
+              <div>Вес:
+                <p class="section-menu__cake-weight">2кг</p>
+              </div>
+              <div>Цена:
+                <p class="section-menu__cake-price">65 руб.</p>
+              </div>
+            </div>
+            <button class="button button--order">Заказать</button>
+          </div>
+          <div class="section-menu__slider-right">слайд вправо</div>
+        </div>
+      </div>
+    </section>
+    <section class="page-main__sections section-video">
+      <h2 class="page-main__sections-title">Понаблюдай за нашей работой</h2>
+      <video>Видео</video>
+    </section>
+    <section class="page-main__sections section-feedback">
+      <h2 class="page-main__sections-title">Свежие отзывы из Instagram</h2>
+      <ul class="feedback__list feedback">
+        <li class="feedback__item">
+          <div class="feedback__header">
+            <img class="feedback__avatar" src="#" alt="avatar">
+            <div class="feedback__information">
+              <p class="feedback__name">Анна Шпилевич</p>
+              <p class="feedback__date">15 апреля 2022 г.</p>
+            </div>
+            <div class="feedback__instagram">insta</div>
+          </div>
+          <div class="feedback__main">
+            <div class="feedback__score">Оценка</div>
+            <div class="feedback__description">
+              <p class="feedback__description-text">Посмотрите какой торт был на Дне рождении! Это же загляденье! Это мой любимый Три шоколада, украшенный живыми цветами. А внутри шоколадно-шоколадный. Прям...</p>
+            </div>
+            <div class="feedback__social">
+              <div class="feedback__like">
+                like
+                <p class="feedback__like-count">38</p>
+              </div>
+              <div class="feedback__comment">
+                comment
+                <p class="feedback__comment-count">1</p>
+              </div>
+              <div class="feedback__share">поделиться</div>
+            </div>
+            <img class="feedback__photo" src="#" alt="img feedback">
+          </div>
+        </li>
+        <li class="feedback__item">
+          <div class="feedback__header">
+            <img class="feedback__avatar" src="#" alt="avatar">
+            <div class="feedback__information">
+              <p class="feedback__name">Елена Лосик</p>
+              <p class="feedback__date">02 апреля 2022 г.</p>
+            </div>
+            <div class="feedback__instagram">insta</div>
+          </div>
+          <div class="feedback__main">
+            <div class="feedback__score">Оценка</div>
+            <div class="feedback__description">
+              <p class="feedback__description-text">Медовик - мой любимый торт с детства. И, наконец, я нашла кондитерскую, которая готовит его идеально. Теперь за медовиком только в @marzipancakes #медовик #лучшийторт...</p>
+            </div>
+            <div class="feedback__social">
+              <div class="feedback__like">
+                like
+                <p class="feedback__like-count">14</p>
+              </div>
+              <div class="feedback__comment">
+                comment
+                <p class="feedback__comment-count">0</p>
+              </div>
+              <div class="feedback__share">поделиться</div>
+            </div>
+            <img class="feedback__photo" src="#" alt="img feedback">
+          </div>
+        </li>
+        <li class="feedback__item">
+          <div class="feedback__header">
+            <img class="feedback__avatar" src="#" alt="avatar">
+            <div class="feedback__information">
+              <p class="feedback__name">Оксана Мирная</p>
+              <p class="feedback__date">21 марта 2022 г.</p>
+            </div>
+            <div class="feedback__instagram">insta</div>
+          </div>
+          <div class="feedback__main">
+            <div class="feedback__score">Оценка</div>
+            <div class="feedback__description">
+              <p class="feedback__description-text">Кусочек шоколадного торта и чашка кофе - мой идеальный завтрак. #шоколадныйторт #идеальныйзавтрак #мойзавтрак #marzipancakes</p>
+            </div>
+            <div class="feedback__social">
+              <div class="feedback__like">
+                like
+                <p class="feedback__like-count">5</p>
+              </div>
+              <div class="feedback__comment">
+                comment
+                <p class="feedback__comment-count">0</p>
+              </div>
+              <div class="feedback__share">поделиться</div>
+            </div>
+            <img class="feedback__photo" src="#" alt="img feedback">
+          </div>
+        </li>
+      </ul>
+      <p class="section-feedback-share">Уже пробовали наши торты? Поделитесь своими впечатлениями в Instagram!<a class="section-feedback-link">#ilovemarzipancakes</a></p>
+    </section>
+    <section class="page-main__sections section-order">
+      <p class="section-order__title">Закажи торт сегодня и получи скидку 10%!</p>
+      <form class="section-order__form" method="get" action="#">
+        <div class="section-order__block">
+          <label class="section-order__label">
+            <input type="text" class="section-order__input section-order__area" placeholder="Имя">
+          </label>
+          <label class="section-order__label">
+            <input type="tel" class="section-order__input section-order__area" placeholder="Телефон">
+          </label>
+<!--          <label class="section-contacts__label-textarea">-->
+<!--            <textarea class="section-contacts__textarea section-contacts__area" rows="5" data-i18n="message" placeholder="Message"></textarea>-->
+<!--          </label>-->
+          <button type="submit" class="button button--order">Заказать</button>
+        </div>
+      </form>
+    </section>
+    <section class="page-main__sections section-contacts">
+      <h2 class="page-main__sections-title">Контакты и доставка</h2>
+      <div class="section-contacts__information">
+        <p class="section-contacts__title">Мы находимся по адресу:</p>
+        <p class="section-contacts__description">г. Минск, ул. Притыцкого, 156, ТЦ Грин Сити, 1 этаж ст. метро Каменная горка</p>
+        <p class="section-contacts__title">Доставка</p>
+        <p class="section-contacts__description">Стоимость доставки в пределах г. Минска составляет 5 руб., доставка в пригород Минска оговаривается дополнительно по телефону. Самовывоз бесплатно.</p>
+        <p class="section-contacts__title">Остались вопросы? Позвони нам!</p>
+        <p class="section-contacts__description">8 (029) 123-12-30</p>
+        <div>
+          <ul class="social">
+            <li class="social__item">
+              <span class="visually-hidden">instagram</span>
+              <a class="social__link" href="#">instagram
+                <svg class="social__link-svg" width="28" height="28">
+                  <use xlink:href="svg/sprite.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <span class="visually-hidden">ВКонтакте</span>
+              <a class="social__link" href="#">ВКонтакте
+                <svg class="social__link-svg" width="32" height="32">
+                  <use xlink:href="svg/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <span class="visually-hidden">Telegram</span>
+              <a class="social__link" href="#">Telegram
+                <svg class="social__link-svg" width="32" height="32">
+                  <use xlink:href="svg/sprite.svg#tw"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-contacts__location">Тут будет карта</div>
+    </section>
+  </main>
+  <footer class="page-footer">
+  <div class="page-footer__container">
+    <div class="page-footer__privacy-policy">
+      <p>Политика конфиденциальности</p>
+      <p>Согласие на обработку данных</p>
+    </div>
+    <p>Кондитерская Marzipan © 2022. Все права защищены</p>
+  </div>
 </footer>
 
-    <script src="js/app.min.js"></script>
-    </body>
+  <script src="js/app.min.js"></script>
+  </body>
 </html>
