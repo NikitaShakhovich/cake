@@ -6,8 +6,25 @@ $nav-last-two: rgba(0, 0, 0, 0.2);
 $nav-border: rgba(1, 1, 1, 0.2);
 // SVG COLORS
 $svg-mobile-rest: #5c6870;
+//FONTS COLORS
+$mate-black-fonts: #1c1c1c;
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width: 320px;
 $only-mobile-width: 767px;
+
+//
+//body {
+//  --text-color: #{$white-fonts};
+//  --bg-color: #{$black-bg};
+//  --svg-color: #{$white-svg};
+//  --svg-hover: #{$gold-svg};
+//
+//  &.light-theme {
+//    --text-color: #{$mate-black-fonts};
+//    --bg-color: #{$white-bg};
+//    --svg-color: #{$mate-black-svg};
+//    --svg-hover: #{$white-svg};
+//  }
+//}
