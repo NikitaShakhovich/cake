@@ -1,30 +1,28 @@
 //COLORS
-$paleblue: #81b3d2;
+$bg-order: rgba(176, 197, 214, 0.4);
+$bg-button: #B92240;
+$bg-button-hover: #CF735B;
+$button-play: #79BBDA;
+$button-play-hover: #CF735B;
+$button-slider: #79BBDA;
+$button-slider-hover: #CF735B;
+$start: #FFB800;
+$social-button-hover: #CF735B;
 //GRADIENT AND SHADOW
-$nav-last-two: rgba(0, 0, 0, 0.2);
+$shadow-card-cake: linear-gradient(89.87deg, rgba(25, 25, 25, 0) 0.11%, rgba(25, 25, 25, 0.08) 47.79%, rgba(25, 25, 25, 0.4) 59.87%, rgba(14, 14, 14, 0.6) 67.37%, rgba(14, 14, 14, 0.8) 80.1%);
 //BORDER
-$nav-border: rgba(1, 1, 1, 0.2);
-// SVG COLORS
-$svg-mobile-rest: #5c6870;
+$border-input: #B92240;
+$border-input-hover: #CF735B;
 //FONTS COLORS
-$mate-black-fonts: #1c1c1c;
+$main-font: #2E363E;
+$second-font: #ffffff;
+$hover-font: #CF735B;
+$hash-font: #79BBDA;
+$cake-font: #79BBDA;
+$cake-hover-font: #CF735B;
+$cake-active-font: #ffffff;
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width: 320px;
 $only-mobile-width: 767px;
-
-//
-//body {
-//  --text-color: #{$white-fonts};
-//  --bg-color: #{$black-bg};
-//  --svg-color: #{$white-svg};
-//  --svg-hover: #{$gold-svg};
-//
-//  &.light-theme {
-//    --text-color: #{$mate-black-fonts};
-//    --bg-color: #{$white-bg};
-//    --svg-color: #{$mate-black-svg};
-//    --svg-hover: #{$white-svg};
-//  }
-//}
