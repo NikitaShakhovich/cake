@@ -5,49 +5,55 @@
     <link rel="stylesheet" href="css/style.min.css">
 <!--    <link rel="icon" href="favicon.ico">-->
 <!--    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">-->
-    <link rel="apple-touch-icon" href="img/favicon/180.png">
+<!--    <link rel="apple-touch-icon" href="img/favicon/180.png">-->
 <!--    <link rel="preload" href="fonts/Merriweather-Bold.ttf" as="font">-->
 <!--    <link rel="preload" href="fonts/Inter-Regular.ttf" as="font">-->
 <!--    <link rel="preload" href="fonts/Inter-Bold.ttf" as="font">-->
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <link rel="manifest" href="../files/manifest.webmanifest">
+<!--    <link rel="manifest" href="../files/manifest.webmanifest">-->
     <title>Каталог</title>
 </head>
 
 
     <body>
-    <header class="page-header">
+    <header class="page__header">
+  <div class="page__header-bg"></div>
   <div class="nav__container">
     <div class="nav__item--logo">
       <span class="visually-hidden">Marzipan</span>
-      <svg class="page-header__logo" height="40px" width="50px">
-      <use xlink:href="svg/sprite.svg#logo"></use>
+      <svg class="page__header-logo" width="186px" height="38px">
+        <use xlink:href="img/icons/icons.svg#cake-logo"></use>
       </svg>
-      <!--            <a class="page-header__logo" href="#"></a>-->
     </div>
-    <nav class="page-header__nav nav page-header__nav--nojs">
+    <nav class="page__header-nav nav page__header-nav--nojs--nojs">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link nav__link--active" href="#1">Меню</a>
+          <a class="nav__link nav__link--active" href="#meny">Меню</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#2">Видео</a>
+          <a class="nav__link" href="#video">Видео</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#3">Отзывы</a>
+          <a class="nav__link" href="#feedback">Отзывы</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#4">Контакты</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#5">Доставка</a>
+          <a class="nav__link" href="#delivery">Доставка</a>
         </li>
       </ul>
     </nav>
     <div class="nav__contacts">
-      <a class="nav__phone-icon">icon phone</a>
-      <p class="nav__phone-number">8 (029) 123-12-30</p>
-      <p class="nav__time-work">с 10:00 до 20:00</p>
+      <a class="nav__phone-number" href="tel:80291231230">
+        <svg width="50px" height="50px">
+          <use xlink:href="img/icons/icons.svg#cake-phone"></use>
+        </svg>
+      </a>
+      <div class="nav__contacts-wrapper">
+        <a class="nav__phone-number" href="tel:80291231230">8 (029) 123-12-30</a>
+        <p class="nav__time-work">с 10:00 до 20:00</p>
+      </div>
     </div>
   </div>
 </header>

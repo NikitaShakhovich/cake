@@ -5,20 +5,18 @@
   })
   <body class="page__body">
   @@include('html/header.html',{})
-  <main class="page-main">
-    <section class="page-main__sections section-header">
+  <main class="page__main">
+    <section class="page__main-sections section-header">
       <div class="section-header__container">
-        <div class="section-header__wrapper">
-          <p class="section-header__subtitle">Торты на заказ</p>
-          <h1 class="section-header__title">Marzipan</h1>
-          <p class="section-header__description">Только натуральные ингредиенты</p>
-          <button class="button">Заказать</button>
-        </div>
+        <span class="section-header__subtitle">Торты на заказ</span>
+        <h1 class="section-header__title">Marzipan</h1>
+        <p class="section-header__description">Только натуральные ингредиенты</p>
+        <button class="button"><a class="button--link" href="#order">Заказать</a></button>
       </div>
     </section>
-    <section class="page-main__sections section-advantage">
+    <section class="page__main-sections section-advantage">
       <div class="section-advantage__container">
-        <h2 class="page-main__sections-title">Наши торты</h2>
+        <h2 class="page__main-title">Наши торты</h2>
         <ul class="section-advantage__list">
           <li class="section-advantage__item">
             <div class="section-advantage__icon">Иконка</div>
@@ -38,9 +36,9 @@
         </ul>
       </div>
     </section>
-    <section class="page-main__sections section-menu">
+    <section class="page__main-sections section-menu">
       <div class="section-menu__container">
-        <h2 class="page-main__sections-title">Меню</h2>
+        <h2 class="page__main-title">Меню</h2>
         <div class="section-menu__slider">
           <div class="section-menu__slider-left">слайд влево</div>
           <div class="section-menu__cake">
@@ -131,12 +129,12 @@
         </div>
       </div>
     </section>
-    <section class="page-main__sections section-video">
-      <h2 class="page-main__sections-title">Понаблюдай за нашей работой</h2>
+    <section class="page__main-sections section-video">
+      <h2 class="page__main-title">Понаблюдай за нашей работой</h2>
       <video>Видео</video>
     </section>
-    <section class="page-main__sections section-feedback">
-      <h2 class="page-main__sections-title">Свежие отзывы из Instagram</h2>
+    <section class="page__main-sections section-feedback">
+      <h2 class="page__main-title">Свежие отзывы из Instagram</h2>
       <ul class="feedback__list feedback">
         <li class="feedback__item">
           <div class="feedback__header">
@@ -225,7 +223,7 @@
       </ul>
       <p class="section-feedback-share">Уже пробовали наши торты? Поделитесь своими впечатлениями в Instagram!<a class="section-feedback-link">#ilovemarzipancakes</a></p>
     </section>
-    <section class="page-main__sections section-order">
+    <section class="page__main-sections section-order">
       <p class="section-order__title">Закажи торт сегодня и получи скидку 10%!</p>
       <form class="section-order__form" method="get" action="#">
         <div class="section-order__block">
@@ -242,8 +240,8 @@
         </div>
       </form>
     </section>
-    <section class="page-main__sections section-contacts">
-      <h2 class="page-main__sections-title">Контакты и доставка</h2>
+    <section class="page__main-sections section-contacts">
+      <h2 class="page__main-title">Контакты и доставка</h2>
       <div class="section-contacts__information">
         <p class="section-contacts__title">Мы находимся по адресу:</p>
         <p class="section-contacts__description">г. Минск, ул. Притыцкого, 156, ТЦ Грин Сити, 1 этаж ст. метро Каменная горка</p>

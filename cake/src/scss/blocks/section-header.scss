@@ -1,0 +1,36 @@
+.section-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 20;
+}
+
+.section-header__container {
+  max-width: 562px;
+  text-align: center;
+  padding: 170px 0 236px 0;
+}
+
+.section-header__subtitle {
+  @include font(300, 20px, 20px);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: $bg-order;
+  padding: 10px 25px;
+}
+
+.section-header__title {
+  font-family: $family-second;
+  @include font(400, 150px, 176px);
+  letter-spacing: -1px;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.section-header__description {
+  @include font(400, 24px, 36px);
+  padding: 0 70px 70px 70px;
+  margin: 0;
+}

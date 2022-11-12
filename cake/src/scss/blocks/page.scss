@@ -1,0 +1,52 @@
+.page {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 36px;
+  scroll-behavior: smooth;
+  font-weight: 400;
+  color: $main-font;
+}
+
+.page__body {
+  display: grid;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.page__header {
+  position: relative;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.page__header-logo {
+  margin: 0 305px 0 0;
+}
+
+.page__header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 1014px;
+  width: 100%;
+  background-image: url("../../img/bg-header.jpg");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.page__main {
+  margin: 0 auto;
+  position: relative;
+}
+
+.page__main-sections {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+
+
+

@@ -5,68 +5,72 @@
     <link rel="stylesheet" href="css/style.min.css">
 <!--    <link rel="icon" href="favicon.ico">-->
 <!--    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">-->
-    <link rel="apple-touch-icon" href="img/favicon/180.png">
+<!--    <link rel="apple-touch-icon" href="img/favicon/180.png">-->
 <!--    <link rel="preload" href="fonts/Merriweather-Bold.ttf" as="font">-->
 <!--    <link rel="preload" href="fonts/Inter-Regular.ttf" as="font">-->
 <!--    <link rel="preload" href="fonts/Inter-Bold.ttf" as="font">-->
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <link rel="manifest" href="../files/manifest.webmanifest">
+<!--    <link rel="manifest" href="../files/manifest.webmanifest">-->
     <title>Главная</title>
 </head>
 
 
   <body class="page__body">
-  <header class="page-header">
+  <header class="page__header">
+  <div class="page__header-bg"></div>
   <div class="nav__container">
     <div class="nav__item--logo">
       <span class="visually-hidden">Marzipan</span>
-      <svg class="page-header__logo" height="40px" width="50px">
-      <use xlink:href="svg/sprite.svg#logo"></use>
+      <svg class="page__header-logo" width="186px" height="38px">
+        <use xlink:href="img/icons/icons.svg#cake-logo"></use>
       </svg>
-      <!--            <a class="page-header__logo" href="#"></a>-->
     </div>
-    <nav class="page-header__nav nav page-header__nav--nojs">
+    <nav class="page__header-nav nav page__header-nav--nojs--nojs">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link nav__link--active" href="#1">Меню</a>
+          <a class="nav__link nav__link--active" href="#meny">Меню</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#2">Видео</a>
+          <a class="nav__link" href="#video">Видео</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#3">Отзывы</a>
+          <a class="nav__link" href="#feedback">Отзывы</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#4">Контакты</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#5">Доставка</a>
+          <a class="nav__link" href="#delivery">Доставка</a>
         </li>
       </ul>
     </nav>
     <div class="nav__contacts">
-      <a class="nav__phone-icon">icon phone</a>
-      <p class="nav__phone-number">8 (029) 123-12-30</p>
-      <p class="nav__time-work">с 10:00 до 20:00</p>
+      <a class="nav__phone-number" href="tel:80291231230">
+        <svg width="50px" height="50px">
+          <use xlink:href="img/icons/icons.svg#cake-phone"></use>
+        </svg>
+      </a>
+      <div class="nav__contacts-wrapper">
+        <a class="nav__phone-number" href="tel:80291231230">8 (029) 123-12-30</a>
+        <p class="nav__time-work">с 10:00 до 20:00</p>
+      </div>
     </div>
   </div>
 </header>
 
 
-  <main class="page-main">
-    <section class="page-main__sections section-header">
+  <main class="page__main">
+    <section class="page__main-sections section-header">
       <div class="section-header__container">
-        <div class="section-header__wrapper">
-          <p class="section-header__subtitle">Торты на заказ</p>
-          <h1 class="section-header__title">Marzipan</h1>
-          <p class="section-header__description">Только натуральные ингредиенты</p>
-          <button class="button">Заказать</button>
-        </div>
+        <span class="section-header__subtitle">Торты на заказ</span>
+        <h1 class="section-header__title">Marzipan</h1>
+        <p class="section-header__description">Только натуральные ингредиенты</p>
+        <button class="button"><a class="button--link" href="#order">Заказать</a></button>
       </div>
     </section>
-    <section class="page-main__sections section-advantage">
+    <section class="page__main-sections section-advantage">
       <div class="section-advantage__container">
-        <h2 class="page-main__sections-title">Наши торты</h2>
+        <h2 class="page__main-title">Наши торты</h2>
         <ul class="section-advantage__list">
           <li class="section-advantage__item">
             <div class="section-advantage__icon">Иконка</div>
@@ -86,9 +90,9 @@
         </ul>
       </div>
     </section>
-    <section class="page-main__sections section-menu">
+    <section class="page__main-sections section-menu">
       <div class="section-menu__container">
-        <h2 class="page-main__sections-title">Меню</h2>
+        <h2 class="page__main-title">Меню</h2>
         <div class="section-menu__slider">
           <div class="section-menu__slider-left">слайд влево</div>
           <div class="section-menu__cake">
@@ -179,12 +183,12 @@
         </div>
       </div>
     </section>
-    <section class="page-main__sections section-video">
-      <h2 class="page-main__sections-title">Понаблюдай за нашей работой</h2>
+    <section class="page__main-sections section-video">
+      <h2 class="page__main-title">Понаблюдай за нашей работой</h2>
       <video>Видео</video>
     </section>
-    <section class="page-main__sections section-feedback">
-      <h2 class="page-main__sections-title">Свежие отзывы из Instagram</h2>
+    <section class="page__main-sections section-feedback">
+      <h2 class="page__main-title">Свежие отзывы из Instagram</h2>
       <ul class="feedback__list feedback">
         <li class="feedback__item">
           <div class="feedback__header">
@@ -273,7 +277,7 @@
       </ul>
       <p class="section-feedback-share">Уже пробовали наши торты? Поделитесь своими впечатлениями в Instagram!<a class="section-feedback-link">#ilovemarzipancakes</a></p>
     </section>
-    <section class="page-main__sections section-order">
+    <section class="page__main-sections section-order">
       <p class="section-order__title">Закажи торт сегодня и получи скидку 10%!</p>
       <form class="section-order__form" method="get" action="#">
         <div class="section-order__block">
@@ -290,8 +294,8 @@
         </div>
       </form>
     </section>
-    <section class="page-main__sections section-contacts">
-      <h2 class="page-main__sections-title">Контакты и доставка</h2>
+    <section class="page__main-sections section-contacts">
+      <h2 class="page__main-title">Контакты и доставка</h2>
       <div class="section-contacts__information">
         <p class="section-contacts__title">Мы находимся по адресу:</p>
         <p class="section-contacts__description">г. Минск, ул. Притыцкого, 156, ТЦ Грин Сити, 1 этаж ст. метро Каменная горка</p>

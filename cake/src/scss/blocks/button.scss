@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: $second-font;
+  background-color: $bg-button;
+  box-shadow: 0 4px 4px $bg-order;
+  border: none;
+  padding: 20px 63px;
+
+  &--link {
+    color: $second-font;
+  }
+}
+
+
