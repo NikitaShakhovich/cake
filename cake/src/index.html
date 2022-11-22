@@ -5,425 +5,584 @@
   })
   <body class="page__body">
   @@include('html/header.html',{})
-  <main class="page__main">
-    <section class="page__main-sections section-header">
-      <div class="section-header__container">
-        <span class="section-header__subtitle">Торты на заказ</span>
-        <h1 class="section-header__title">Marzipan</h1>
-        <p class="section-header__description">Только натуральные ингредиенты</p>
-        <button class="button"><a class="button--link" href="#order">Заказать</a></button>
-      </div>
-    </section>
-    <section class="page__main-sections section-advantage">
-<!--      <div class="section-advantage__container">-->
-        <h2 class="page__main-title page__main-title--blue">Наши торты</h2>
-        <ul class="section-advantage__list">
-          <li class="section-advantage__item">
-            <div>
-              <img class="section-advantage__icon" src="../../img/oven.gif" alt="oven">
-            </div>
-            <p class="section-advantage__title">Всегда свежие</p>
-            <p class="section-advantage__description">Мы готовим торты из самых свежих продуктов исключительно за день до желаемой даты</p>
-          </li>
-          <li class="section-advantage__item">
-            <div>
-              <img class="section-advantage__icon" src="../../img/egg.gif" alt="egg">
-            </div>
-            <p class="section-advantage__title">Всегда натуральные</p>
-            <p class="section-advantage__description">Мы не используем искусственные красители, заменители сахара, яичный порошок и консерванты</p>
-          </li>
-          <li class="section-advantage__item">
-            <div>
-              <img class="section-advantage__icon" src="../../img/cake.gif" alt="cake">
-            </div>
-            <p class="section-advantage__title">Всегда красивые</p>
-            <p class="section-advantage__description">Ягоды, фрукты, орехи, шоколад, крем, безе — декор наших тортов всегда аппетитный и привлекательный</p>
-          </li>
-        </ul>
+<!--  <main class="page__main">-->
+<!--    <section class="page__main-sections section-header">-->
+<!--      <div class="section-header__container">-->
+<!--        <span class="section-header__subtitle">Торты на заказ</span>-->
+<!--        <h1 class="section-header__title">Marzipan</h1>-->
+<!--        <p class="section-header__description">Только натуральные ингредиенты</p>-->
+<!--        <button class="button"><a class="button&#45;&#45;link" href="#order">Заказать</a></button>-->
 <!--      </div>-->
-    </section>
-    <section class="page__main-sections section-menu" id="menu">
-      <h2 class="page__main-title page__main-title--beige">Меню</h2>
-      <div class="section-menu__slider-button section-menu__slider-button--left">
-        <svg width="40px" height="24px">
-          <use xlink:href="img/icons/icons.svg#icon-slider"></use>
-        </svg>
-      </div>
-      <div class="section-menu__container">
-        <div class="section-menu__slider">
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-castle.jpg" alt="castle">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Воздушный замок</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
+<!--    </section>-->
+<!--    <section class="page__main-sections section-advantage">-->
+<!--&lt;!&ndash;      <div class="section-advantage__container">&ndash;&gt;-->
+<!--        <h2 class="page__main-title page__main-title&#45;&#45;blue">Наши торты</h2>-->
+<!--        <ul class="section-advantage__list">-->
+<!--          <li class="section-advantage__item">-->
+<!--            <div>-->
+<!--              <img class="section-advantage__icon" src="../../img/oven.gif" alt="oven">-->
+<!--            </div>-->
+<!--            <p class="section-advantage__title">Всегда свежие</p>-->
+<!--            <p class="section-advantage__description">Мы готовим торты из самых свежих продуктов исключительно за день до желаемой даты</p>-->
+<!--          </li>-->
+<!--          <li class="section-advantage__item">-->
+<!--            <div>-->
+<!--              <img class="section-advantage__icon" src="../../img/egg.gif" alt="egg">-->
+<!--            </div>-->
+<!--            <p class="section-advantage__title">Всегда натуральные</p>-->
+<!--            <p class="section-advantage__description">Мы не используем искусственные красители, заменители сахара, яичный порошок и консерванты</p>-->
+<!--          </li>-->
+<!--          <li class="section-advantage__item">-->
+<!--            <div>-->
+<!--              <img class="section-advantage__icon" src="../../img/cake.gif" alt="cake">-->
+<!--            </div>-->
+<!--            <p class="section-advantage__title">Всегда красивые</p>-->
+<!--            <p class="section-advantage__description">Ягоды, фрукты, орехи, шоколад, крем, безе — декор наших тортов всегда аппетитный и привлекательный</p>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--    </section>-->
+<!--    <section class="page__main-sections section-menu" id="menu">-->
+<!--      <h2 class="page__main-title page__main-title&#45;&#45;beige">Меню</h2>-->
+<!--      <div class="section-menu__slider-button section-menu__slider-button&#45;&#45;left">-->
+<!--        <svg width="40px" height="24px">-->
+<!--          <use xlink:href="img/icons/icons.svg#icon-slider"></use>-->
+<!--        </svg>-->
+<!--      </div>-->
+<!--      <div class="section-menu__container">-->
+<!--        <div class="section-menu__slider">-->
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-castle.jpg" alt="castle">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Воздушный замок</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
-          <div class="section-menu__cake">
-              <div class="section-menu__img-container">
-                <img class="section-menu__cake-img" src="../../img/cake-christmas.jpg" alt="christmas">
-                <div class="section-menu__cake-text">
-                  <p class="section-menu__cake-name">Рождественский</p>
-                  <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-                </div>
-              </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
-
-
-
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-mango.jpg" alt="mango">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Манго-черника</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
-
-
-
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-cheesecake.jpg" alt="cheesecake">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
+<!--          <div class="section-menu__cake">-->
+<!--              <div class="section-menu__img-container">-->
+<!--                <img class="section-menu__cake-img" src="../../img/cake-christmas.jpg" alt="christmas">-->
+<!--                <div class="section-menu__cake-text">-->
+<!--                  <p class="section-menu__cake-name">Рождественский</p>-->
+<!--                  <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
 
-
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-chocolate.jpg" alt="chocolate">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Три шоколада</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
-
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-mango.jpg" alt="mango">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Манго-черника</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
 
-
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-creamy.jpg" alt="creamy">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Сливочная ириска</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
-
-
-
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-strawberry.jpg" alt="strawberry">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Клубника-лайм</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-cheesecake.jpg" alt="cheesecake">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Чизкейк «Нью-Йорк»</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
 
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-honey.jpg" alt="honey">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Медовик</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
+
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-chocolate.jpg" alt="chocolate">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Три шоколада</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
 
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-velvet.jpg" alt="velvet">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Синий бархат</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
+
+
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-creamy.jpg" alt="creamy">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Сливочная ириска</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
 
-          <div class="section-menu__cake">
-            <div class="section-menu__img-container">
-              <img class="section-menu__cake-img" src="../../img/cake-pansies.jpg" alt="pansies">
-              <div class="section-menu__cake-text">
-                <p class="section-menu__cake-name">Анютины глазки</p>
-                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>
-              </div>
-            </div>
-            <div class="section-menu__cake-wrapper">
-              <div class="section-menu__cake-param">Вес:
-                <p class="section-menu__cake-weight">2кг</p>
-              </div>
-              <div class="section-menu__cake-param">Цена:
-                <p class="section-menu__cake-price">65 руб.</p>
-              </div>
-            </div>
-            <button class="button button--order">Заказать</button>
-          </div>
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-strawberry.jpg" alt="strawberry">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Клубника-лайм</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
 
 
 
-        </div>
-      </div>
-      <div class="section-menu__slider-button section-menu__slider-button--right">
-        <svg width="40px" height="24px">
-          <use xlink:href="img/icons/icons.svg#icon-slider"></use>
-        </svg>
-      </div>
-    </section>
-    <section class="page__main-sections section-video">
-      <h2 class="page__main-title page__main-title--blue">Понаблюдай за нашей работой</h2>
-      <video>Видео</video>
-    </section>
-    <section class="page__main-sections section-feedback">
-      <h2 class="page__main-title page__main-title--beige">Свежие отзывы из Instagram</h2>
-      <ul class="feedback__list feedback">
-        <li class="feedback__item">
-          <div class="feedback__header">
-            <img class="feedback__avatar" src="#" alt="avatar">
-            <div class="feedback__information">
-              <p class="feedback__name">Анна Шпилевич</p>
-              <p class="feedback__date">15 апреля 2022 г.</p>
-            </div>
-            <div class="feedback__instagram">insta</div>
-          </div>
-          <div class="feedback__main">
-            <div class="feedback__score">Оценка</div>
-            <div class="feedback__description">
-              <p class="feedback__description-text">Посмотрите какой торт был на Дне рождении! Это же загляденье! Это мой любимый Три шоколада, украшенный живыми цветами. А внутри шоколадно-шоколадный. Прям...</p>
-            </div>
-            <div class="feedback__social">
-              <div class="feedback__like">
-                like
-                <p class="feedback__like-count">38</p>
-              </div>
-              <div class="feedback__comment">
-                comment
-                <p class="feedback__comment-count">1</p>
-              </div>
-              <div class="feedback__share">поделиться</div>
-            </div>
-            <img class="feedback__photo" src="#" alt="img feedback">
-          </div>
-        </li>
-        <li class="feedback__item">
-          <div class="feedback__header">
-            <img class="feedback__avatar" src="#" alt="avatar">
-            <div class="feedback__information">
-              <p class="feedback__name">Елена Лосик</p>
-              <p class="feedback__date">02 апреля 2022 г.</p>
-            </div>
-            <div class="feedback__instagram">insta</div>
-          </div>
-          <div class="feedback__main">
-            <div class="feedback__score">Оценка</div>
-            <div class="feedback__description">
-              <p class="feedback__description-text">Медовик - мой любимый торт с детства. И, наконец, я нашла кондитерскую, которая готовит его идеально. Теперь за медовиком только в @marzipancakes #медовик #лучшийторт...</p>
-            </div>
-            <div class="feedback__social">
-              <div class="feedback__like">
-                like
-                <p class="feedback__like-count">14</p>
-              </div>
-              <div class="feedback__comment">
-                comment
-                <p class="feedback__comment-count">0</p>
-              </div>
-              <div class="feedback__share">поделиться</div>
-            </div>
-            <img class="feedback__photo" src="#" alt="img feedback">
-          </div>
-        </li>
-        <li class="feedback__item">
-          <div class="feedback__header">
-            <img class="feedback__avatar" src="#" alt="avatar">
-            <div class="feedback__information">
-              <p class="feedback__name">Оксана Мирная</p>
-              <p class="feedback__date">21 марта 2022 г.</p>
-            </div>
-            <div class="feedback__instagram">insta</div>
-          </div>
-          <div class="feedback__main">
-            <div class="feedback__score">Оценка</div>
-            <div class="feedback__description">
-              <p class="feedback__description-text">Кусочек шоколадного торта и чашка кофе - мой идеальный завтрак. #шоколадныйторт #идеальныйзавтрак #мойзавтрак #marzipancakes</p>
-            </div>
-            <div class="feedback__social">
-              <div class="feedback__like">
-                like
-                <p class="feedback__like-count">5</p>
-              </div>
-              <div class="feedback__comment">
-                comment
-                <p class="feedback__comment-count">0</p>
-              </div>
-              <div class="feedback__share">поделиться</div>
-            </div>
-            <img class="feedback__photo" src="#" alt="img feedback">
-          </div>
-        </li>
-      </ul>
-      <p class="section-feedback-share">Уже пробовали наши торты? Поделитесь своими впечатлениями в Instagram!<a class="section-feedback-link">#ilovemarzipancakes</a></p>
-    </section>
-    <section class="page__main-sections section-order">
-      <p class="section-order__title">Закажи торт сегодня и получи скидку 10%!</p>
-      <form class="section-order__form" method="get" action="#">
-        <div class="section-order__block">
-          <label class="section-order__label">
-            <input type="text" class="section-order__input section-order__area" placeholder="Имя">
-          </label>
-          <label class="section-order__label">
-            <input type="tel" class="section-order__input section-order__area" placeholder="Телефон">
-          </label>
-<!--          <label class="section-contacts__label-textarea">-->
-<!--            <textarea class="section-contacts__textarea section-contacts__area" rows="5" data-i18n="message" placeholder="Message"></textarea>-->
-<!--          </label>-->
-          <button type="submit" class="button button--order">Заказать</button>
-        </div>
-      </form>
-    </section>
-    <section class="page__main-sections section-contacts">
-      <h2 class="page__main-title page__main-title--blue">Контакты и доставка</h2>
-      <div class="section-contacts__information">
-        <p class="section-contacts__title">Мы находимся по адресу:</p>
-        <p class="section-contacts__description">г. Минск, ул. Притыцкого, 156, ТЦ Грин Сити, 1 этаж ст. метро Каменная горка</p>
-        <p class="section-contacts__title">Доставка</p>
-        <p class="section-contacts__description">Стоимость доставки в пределах г. Минска составляет 5 руб., доставка в пригород Минска оговаривается дополнительно по телефону. Самовывоз бесплатно.</p>
-        <p class="section-contacts__title">Остались вопросы? Позвони нам!</p>
-        <p class="section-contacts__description">8 (029) 123-12-30</p>
-        <div>
-          <ul class="social">
-            <li class="social__item">
-              <span class="visually-hidden">instagram</span>
-              <a class="social__link" href="#">instagram
-                <svg class="social__link-svg" width="28" height="28">
-                  <use xlink:href="svg/sprite.svg#inst"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <span class="visually-hidden">ВКонтакте</span>
-              <a class="social__link" href="#">ВКонтакте
-                <svg class="social__link-svg" width="32" height="32">
-                  <use xlink:href="svg/sprite.svg#fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <span class="visually-hidden">Telegram</span>
-              <a class="social__link" href="#">Telegram
-                <svg class="social__link-svg" width="32" height="32">
-                  <use xlink:href="svg/sprite.svg#tw"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="section-contacts__location">Тут будет карта</div>
-    </section>
-  </main>
-  @@include('html/footer.html',{})
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-honey.jpg" alt="honey">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Медовик</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
+
+
+
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-velvet.jpg" alt="velvet">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Синий бархат</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
+
+
+
+<!--          <div class="section-menu__cake">-->
+<!--            <div class="section-menu__img-container">-->
+<!--              <img class="section-menu__cake-img" src="../../img/cake-pansies.jpg" alt="pansies">-->
+<!--              <div class="section-menu__cake-text">-->
+<!--                <p class="section-menu__cake-name">Анютины глазки</p>-->
+<!--                <p class="section-menu__cake-description">Классический нежный чизкейк из сливочного сыра с добавлением натуральной ванили, украшенный свежими ягодами</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="section-menu__cake-wrapper">-->
+<!--              <div class="section-menu__cake-param">Вес:-->
+<!--                <p class="section-menu__cake-weight">2кг</p>-->
+<!--              </div>-->
+<!--              <div class="section-menu__cake-param">Цена:-->
+<!--                <p class="section-menu__cake-price">65 руб.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <button class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
+
+
+
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="section-menu__slider-button section-menu__slider-button&#45;&#45;right">-->
+<!--        <svg width="40px" height="24px">-->
+<!--          <use xlink:href="img/icons/icons.svg#icon-slider"></use>-->
+<!--        </svg>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section class="page__main-sections section-video" id="video">-->
+<!--      <h2 class="page__main-title page__main-title&#45;&#45;blue">Понаблюдай за нашей работой</h2>-->
+<!--      <img class="section-video__img" src="img/cake-video.jpg" alt="video cake">-->
+<!--      <div class="section-video__play">-->
+<!--        <svg class="section-video__icon-play" width="44px" height="50px">-->
+<!--          <use xlink:href="img/icons/icons.svg#icon-play"></use>-->
+<!--        </svg>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section class="page__main-sections feedback" id="feedback">-->
+<!--      <h2 class="page__main-title page__main-title&#45;&#45;beige">Свежие отзывы из Instagram</h2>-->
+<!--      <ul class="feedback__list">-->
+<!--        <li class="feedback__item">-->
+
+
+<!--        <div class="feedback__item-container">-->
+<!--          <div class="feedback__header">-->
+<!--            <div class="feedback__avatar-container">-->
+<!--              <img class="feedback__avatar" src="img/avatar1.png" width="96" height="94" alt="avatar-1">-->
+<!--              <div class="feedback__information">-->
+<!--                <p class="feedback__name">Анна Шпилевич</p>-->
+<!--                <p class="feedback__date">15 апреля 2022 г.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="feedback__instagram">-->
+<!--                <svg class="feedback__svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40">-->
+<!--                  <g clip-path="url(#a)">-->
+<!--                    <rect fill="none" width="37" height="35.79" x="1.5" y="2.23" stroke-width="3" rx="8.5"/>-->
+<!--                    <path fill="none" stroke-width="3" d="M27.83 20.13A7.7 7.7 0 0 1 20 27.68a7.7 7.7 0 0 1-7.83-7.55A7.7 7.7 0 0 1 20 12.58a7.7 7.7 0 0 1 7.83 7.55Z"/>-->
+<!--                    <mask id="b" fill="#fff">-->
+<!--                      <ellipse cx="30.67" cy="9.79" rx="2" ry="1.94"/>-->
+<!--                    </mask>-->
+<!--                    <path d="M30.67 9.79v-.05l.02-.02h-.02v4c2.15 0 4-1.7 4-3.93h-4Zm0-.06h-.02s0-.01 0 0v.01c.02.02.02.03.02.05h-4a3.97 3.97 0 0 0 4 3.94v-4Zm0 .06-.01.04-.01.02h.02v-4c-2.15 0-4 1.7-4 3.94h4Zm0 .06h.02l-.01-.02a.12.12 0 0 1-.01-.04h4a3.97 3.97 0 0 0-4-3.94v4Z" mask="url(#b)"/>-->
+<!--                  </g>-->
+<!--                  <defs>-->
+<!--                    <clipPath id="a">-->
+<!--                      <path fill="#fff" d="M0 .73h40v38.8H0z"/>-->
+<!--                    </clipPath>-->
+<!--                  </defs>-->
+<!--                </svg>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="feedback__main">-->
+<!--            <div class="feedback__score">-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--            <div class="feedback__description">-->
+<!--              <p class="feedback__description-text">Посмотрите какой торт был на Дне рождении! Это же загляденье! Это мой любимый Три шоколада, украшенный живыми цветами. А внутри шоколадно-шоколадный. Прям...</p>-->
+<!--            </div>-->
+
+<!--          </div>-->
+
+<!--          <div class="feedback__social">-->
+<!--            <div class="feedback__like">-->
+<!--              <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon_heart"></use>-->
+<!--              </svg>-->
+<!--              <p class="feedback__like-count">38</p>-->
+<!--            </div>-->
+<!--            <div class="feedback__comment">-->
+<!--              <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon_comments"></use>-->
+<!--              </svg>-->
+<!--              <p class="feedback__comment-count">1</p>-->
+<!--            </div>-->
+<!--            <div class="feedback__share">-->
+<!--              <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon_share"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <img class="feedback__photo" src="img/imagefeedback-1.jpg" alt="img feedback">-->
+<!--        </div>-->
+
+
+<!--        </li>-->
+<!--        <li class="feedback__item">-->
+
+<!--          <div class="feedback__item-container">-->
+<!--          <div class="feedback__header">-->
+<!--            <div class="feedback__avatar-container">-->
+<!--              <img class="feedback__avatar" src="img/avatar2.png" width="96" height="94" alt="avatar-2">-->
+<!--              <div class="feedback__information">-->
+<!--                <p class="feedback__name">Елена Лосик</p>-->
+<!--                <p class="feedback__date">02 апреля 2022 г.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="feedback__instagram">-->
+<!--              <svg class="feedback__svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40">-->
+<!--                <g clip-path="url(#a)">-->
+<!--                  <rect width="37" fill="none" height="35.79" x="1.5" y="2.23" stroke-width="3" rx="8.5"/>-->
+<!--                  <path fill="none" stroke-width="3" d="M27.83 20.13A7.7 7.7 0 0 1 20 27.68a7.7 7.7 0 0 1-7.83-7.55A7.7 7.7 0 0 1 20 12.58a7.7 7.7 0 0 1 7.83 7.55Z"/>-->
+<!--                  <mask id="b">-->
+<!--                    <ellipse cx="30.67" cy="9.79" rx="2" ry="1.94"/>-->
+<!--                  </mask>-->
+<!--                  <path d="M30.67 9.79v-.05l.02-.02h-.02v4c2.15 0 4-1.7 4-3.93h-4Zm0-.06h-.02s0-.01 0 0v.01c.02.02.02.03.02.05h-4a3.97 3.97 0 0 0 4 3.94v-4Zm0 .06-.01.04-.01.02h.02v-4c-2.15 0-4 1.7-4 3.94h4Zm0 .06h.02l-.01-.02a.12.12 0 0 1-.01-.04h4a3.97 3.97 0 0 0-4-3.94v4Z" mask="url(#b)"/>-->
+<!--                </g>-->
+<!--                <defs>-->
+<!--                  <clipPath id="a">-->
+<!--                    <path d="M0 .73h40v38.8H0z"/>-->
+<!--                  </clipPath>-->
+<!--                </defs>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="feedback__main">-->
+<!--            <div class="feedback__score">-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--            <div class="feedback__description">-->
+<!--              <p class="feedback__description-text">Медовик - мой любимый торт с детства. И, наконец, я нашла кондитерскую, которая готовит его идеально. Теперь за медовиком только в <a class="feedback__link" href="#">@marzipancakes #медовик #лучшийторт</a>...</p>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--            <div class="feedback__social">-->
+<!--              <div class="feedback__like">-->
+<!--                <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                  <use xlink:href="img/icons/icons.svg#icon_heart"></use>-->
+<!--                </svg>-->
+<!--                <p class="feedback__like-count">14</p>-->
+<!--              </div>-->
+<!--              <div class="feedback__comment">-->
+<!--                <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                  <use xlink:href="img/icons/icons.svg#icon_comments"></use>-->
+<!--                </svg>-->
+<!--                <p class="feedback__comment-count">0</p>-->
+<!--              </div>-->
+<!--              <div class="feedback__share">-->
+<!--                <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                  <use xlink:href="img/icons/icons.svg#icon_share"></use>-->
+<!--                </svg>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          <img class="feedback__photo" src="img/imagefeedback-3.jpg" alt="img feedback">-->
+<!--</div>-->
+
+<!--        </li>-->
+<!--        <li class="feedback__item">-->
+
+
+<!--          <div class="feedback__item-container">-->
+<!--          <div class="feedback__header">-->
+<!--            <div class="feedback__avatar-container">-->
+<!--              <img class="feedback__avatar" src="img/avatar3.png" width="96" height="94" alt="avatar-3">-->
+<!--              <div class="feedback__information">-->
+<!--                <p class="feedback__name">Оксана Мирная</p>-->
+<!--                <p class="feedback__date">21 марта 2022 г.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="feedback__instagram">-->
+<!--              <svg class="feedback__svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40">-->
+<!--                <g clip-path="url(#a)">-->
+<!--                  <rect width="37" fill="none" height="35.79" x="1.5" y="2.23" stroke-width="3" rx="8.5"/>-->
+<!--                  <path fill="none" stroke-width="3" d="M27.83 20.13A7.7 7.7 0 0 1 20 27.68a7.7 7.7 0 0 1-7.83-7.55A7.7 7.7 0 0 1 20 12.58a7.7 7.7 0 0 1 7.83 7.55Z"/>-->
+<!--                  <mask id="b">-->
+<!--                    <ellipse cx="30.67" cy="9.79" rx="2" ry="1.94"/>-->
+<!--                  </mask>-->
+<!--                  <path d="M30.67 9.79v-.05l.02-.02h-.02v4c2.15 0 4-1.7 4-3.93h-4Zm0-.06h-.02s0-.01 0 0v.01c.02.02.02.03.02.05h-4a3.97 3.97 0 0 0 4 3.94v-4Zm0 .06-.01.04-.01.02h.02v-4c-2.15 0-4 1.7-4 3.94h4Zm0 .06h.02l-.01-.02a.12.12 0 0 1-.01-.04h4a3.97 3.97 0 0 0-4-3.94v4Z" mask="url(#b)"/>-->
+<!--                </g>-->
+<!--                <defs>-->
+<!--                  <clipPath id="a">-->
+<!--                    <path d="M0 .73h40v38.8H0z"/>-->
+<!--                  </clipPath>-->
+<!--                </defs>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="feedback__main">-->
+<!--            <div class="feedback__score">-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--              <svg class="feedback__svg" width="24px" height="24px">-->
+<!--                <use xlink:href="img/icons/icons.svg#icon-star"></use>-->
+<!--              </svg>-->
+<!--            </div>-->
+<!--            <div class="feedback__description">-->
+<!--              <p class="feedback__description-text">Кусочек шоколадного торта и чашка кофе - мой идеальный завтрак. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa <a class="feedback__link" href="#">#шоколадныйторт #идеальныйзавтрак #мойзавтрак #marzipancakes</a></p>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--            <div class="feedback__social">-->
+<!--              <div class="feedback__like">-->
+<!--                <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                  <use xlink:href="img/icons/icons.svg#icon_heart"></use>-->
+<!--                </svg>-->
+<!--                <p class="feedback__like-count">5</p>-->
+<!--              </div>-->
+<!--              <div class="feedback__comment">-->
+<!--                <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                  <use xlink:href="img/icons/icons.svg#icon_comments"></use>-->
+<!--                </svg>-->
+<!--                <p class="feedback__comment-count">0</p>-->
+<!--              </div>-->
+<!--              <div class="feedback__share">-->
+<!--                <svg class="feedback__svg" width="40px" height="40px">-->
+<!--                  <use xlink:href="img/icons/icons.svg#icon_share"></use>-->
+<!--                </svg>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          <img class="feedback__photo" src="img/imagefeedback-2.jpg" alt="img feedback">-->
+<!--</div>-->
+
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <p class="feedback__share-text">Уже пробовали наши торты? Поделитесь своими впечатлениями в Instagram!<a class="feedback__link" href="#">#ilovemarzipancakes</a></p>-->
+<!--    </section>-->
+<!--    <section class="page__main-sections section-order" id="order">-->
+<!--      <div class="section-order__container">-->
+<!--        <p class="section-order__title">Закажи торт сегодня и получи скидку 10%!</p>-->
+<!--        <form class="section-order__form" method="get" action="#">-->
+<!--          <div class="section-order__block">-->
+<!--            <label class="section-order__label">-->
+<!--              <input type="text" class="section-order__input section-order__area" placeholder="Имя">-->
+<!--            </label>-->
+<!--            <label class="section-order__label">-->
+<!--              <input type="tel" class="section-order__input section-order__area" placeholder="Телефон">-->
+<!--            </label>-->
+<!--  &lt;!&ndash;          <label class="section-contacts__label-textarea">&ndash;&gt;-->
+<!--  &lt;!&ndash;            <textarea class="section-contacts__textarea section-contacts__area" rows="5" data-i18n="message" placeholder="Message"></textarea>&ndash;&gt;-->
+<!--  &lt;!&ndash;          </label>&ndash;&gt;-->
+<!--            <button type="submit" class="button button&#45;&#45;order">Заказать</button>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--    <section class="page__main-sections section-contacts" id="delivery">-->
+<!--      <h2 class="page__main-title page__main-title&#45;&#45;blue">Контакты и доставка</h2>-->
+<!--      <div class="section-contacts__container">-->
+<!--        <div class="section-contacts__information">-->
+<!--          <p class="section-contacts__title">Мы находимся по адресу:</p>-->
+<!--          <p class="section-contacts__description">г. Минск, ул. Притыцкого, 156, ТЦ Грин Сити, 1 этаж ст. метро Каменная горка</p>-->
+<!--          <p class="section-contacts__title">Доставка</p>-->
+<!--          <p class="section-contacts__description">Стоимость доставки в пределах г. Минска составляет 5 руб., доставка в пригород Минска оговаривается дополнительно по телефону. Самовывоз бесплатно.</p>-->
+<!--          <p class="section-contacts__title">Остались вопросы? Позвони нам!</p>-->
+<!--          <a class="section-contacts__description section-contacts__description&#45;&#45;phone" href="tel:80291231230">8 (029) 123-12-30</a>-->
+<!--          <div>-->
+<!--            <ul class="social">-->
+<!--              <li class="social__item">-->
+<!--                <span class="visually-hidden">instagram</span>-->
+<!--                <a class="social__link" href="#">-->
+<!--                  <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60">-->
+<!--                    <path fill="none" stroke-width="3" d="M58.5 30a28.5 28.5 0 1 1-57 0 28.5 28.5 0 0 1 57 0Z"/>-->
+<!--                    <path d="M40.6 15H19.4a4.4 4.4 0 0 0-4.4 4.4v21.2a4.4 4.4 0 0 0 4.4 4.4h21.2a4.4 4.4 0 0 0 4.4-4.4V19.4a4.4 4.4 0 0 0-4.4-4.4ZM30.07 37.85a7.92 7.92 0 0 1 0-15.82 7.92 7.92 0 0 1 0 15.82Zm8.79-14.06a2.64 2.64 0 1 1 0-5.28 2.64 2.64 0 0 1 0 5.28Z"/>-->
+<!--                    <path d="M38.82 20.25a.88.88 0 1 0 0 1.76.88.88 0 0 0 0-1.76Zm-8.8 3.52a6.16 6.16 0 1 0 .03 12.32 6.16 6.16 0 0 0-.02-12.32Z"/>-->
+<!--                  </svg>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="social__item">-->
+<!--                <span class="visually-hidden">ВКонтакте</span>-->
+<!--                <a class="social__link" href="#">-->
+<!--                  <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60">-->
+<!--                    <path d="M45.218 33.244c1.398 1.366 2.878 2.652 4.132 4.16.556.666 1.08 1.354 1.48 2.13.57 1.106.054 2.318-.934 2.384l-6.146-.002c-1.588.132-2.852-.51-3.916-1.594-.85-.866-1.64-1.788-2.458-2.684a5.747 5.747 0 0 0-1.106-.984c-.84-.544-1.566-.378-2.046.498-.49.89-.6 1.878-.648 2.868-.066 1.45-.504 1.828-1.958 1.896-3.108.146-6.056-.326-8.796-1.892-2.416-1.38-4.288-3.332-5.918-5.54-3.174-4.304-5.606-9.028-7.79-13.888-.492-1.094-.132-1.68 1.076-1.7 2.006-.037 4.012-.038 6.018-.004.816.014 1.356.48 1.67 1.25 1.084 2.668 2.412 5.206 4.078 7.56.444.626.896 1.25 1.54 1.692.714.49 1.256.328 1.592-.466.214-.506.308-1.046.354-1.588.16-1.854.18-3.708-.098-5.554-.172-1.156-.82-1.902-1.974-2.12-.586-.112-.5-.33-.216-.664.496-.58.96-.94 1.888-.94h6.944c1.094.214 1.34.706 1.488 1.808l.006 7.718c-.012.426.214 1.69.98 1.97.614.202 1.02-.29 1.386-.68 1.666-1.766 2.852-3.852 3.914-6.01.47-.952.874-1.938 1.268-2.924.292-.73.746-1.09 1.57-1.078l6.686.008c.198 0 .398.002.592.036 1.128.194 1.436.678 1.088 1.778-.55 1.726-1.616 3.166-2.658 4.608-1.116 1.544-2.308 3.034-3.414 4.586-1.016 1.418-.936 2.132.326 3.362Z"/>-->
+<!--                    <path class="icon-stroke" stroke-width="3" d="M58.5 30c0 15.74-12.76 28.5-28.5 28.5S1.5 45.74 1.5 30 14.26 1.5 30 1.5 58.5 14.26 58.5 30Z" fill="none"/>-->
+<!--                  </svg>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="social__item">-->
+<!--                <span class="visually-hidden">Telegram</span>-->
+<!--                <a class="social__link" href="#">-->
+<!--                  <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60">-->
+<!--                    <path stroke-width="3" d="M58.5 30c0 15.74-12.76 28.5-28.5 28.5S1.5 45.74 1.5 30 14.26 1.5 30 1.5 58.5 14.26 58.5 30Z" fill="none"/>-->
+<!--                    <path d="M43.886 14.814 11.38 27.35c-2.218.89-2.206 2.128-.406 2.68l8.344 2.602 19.31-12.18c.912-.558 1.746-.26 1.06.35l-15.642 14.12h-.004.004l-.576 8.602c.842 0 1.214-.386 1.688-.842l4.054-3.942 8.432 6.228c1.554.856 2.67.416 3.058-1.44l5.534-26.084c.566-2.272-.868-3.3-2.35-2.63Z"/>-->
+<!--                  </svg>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="section-contacts__location"></div>-->
+<!--      </div>-->
+<!--    </section>-->
+<!--  </main>-->
+<!--  @@include('html/footer.html',{})-->
   <script src="js/app.min.js"></script>
   </body>
 </html>

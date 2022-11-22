@@ -1,0 +1,116 @@
+.feedback__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 73px 0 80px 0;
+  margin: 0;
+  gap: 32px;
+}
+
+.feedback__item {
+  border: 1px solid $border-feedback;
+  border-radius: 20px;
+  max-width: 552px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.feedback__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 30px 29px 30px;
+}
+
+.feedback__avatar-container {
+  @include flex;
+}
+
+.feedback__information {
+  padding: 0 20px;
+}
+
+.feedback__name {
+  margin: 0;
+  padding: 11px 0 9px 0;
+  @include font(700, 24px, 36px);
+}
+
+.feedback__date {
+  @include font(400, 20px, 30px);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0 11px 0;
+}
+
+.feedback__svg {
+  fill: $social-button;
+  stroke: $social-button;
+  transition: 0.6s;
+
+  &:hover {
+    fill: $social-button-hover;
+    stroke: $social-button-hover;
+    transition: 0.6s;
+  }
+}
+
+.feedback__main {
+  padding: 29px 30px 29px 30px;
+  flex-grow: 2;
+}
+
+.feedback__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px 29px 30px;
+  font-family: $family-roboto;
+  @include font(400, 24px, 36px);
+}
+
+.feedback__description-text {
+  @include font(400, 20px, 30px);
+  font-family: $family-roboto;
+  letter-spacing: 0.04em;
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+
+.feedback__link {
+  color: $hash-font;
+}
+
+.feedback__like {
+  @include flex;
+  gap: 15px;
+}
+
+.feedback__comment {
+  @include flex;
+  gap: 15px;
+}
+
+.feedback__share {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.feedback__share-text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.feedback__item-container {
+  display: flex;
+  flex-direction: column;
+height: 100%;
+}

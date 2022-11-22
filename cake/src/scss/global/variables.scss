@@ -8,12 +8,18 @@ $button-slider: #79BBDA;
 $button-slider-hover: #CF735B;
 $start: #FFB800;
 $social-button-hover: #CF735B;
+$social-button: #2E363E;
+$footer: #B0C5D6;
+$svg-phone: #ffffff;
+$svg-phone-hover: #CF735B;
+
 //GRADIENT AND SHADOW
 $shadow-card-cake: linear-gradient(89.87deg, rgba(25, 25, 25, 0) 0.11%, rgba(25, 25, 25, 0.08) 47.79%, rgba(25, 25, 25, 0.4) 59.87%, rgba(14, 14, 14, 0.6) 67.37%, rgba(14, 14, 14, 0.8) 80.1%);
 $bg-order: rgba(176, 197, 214, 0.4);
 //BORDER
 $border-input: #B92240;
 $border-input-hover: #CF735B;
+$border-feedback: #B0C5D6;
 //FONTS COLORS
 $main-font: #2E363E;
 $second-font: #ffffff;
@@ -30,6 +36,7 @@ $only-mobile: 767px;
 // font family
 $family: 'Montserrat', sans-serif;
 $family-second: 'RougeScript', sans-serif;
+$family-roboto: 'Roboto', sans-serif;
 // mixins
 @mixin flex {
   display: flex;

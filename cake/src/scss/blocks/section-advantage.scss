@@ -14,8 +14,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  align-self: stretch;
   text-align: center;
+  max-width: 552px;
 }
 
 .section-advantage__icon {
@@ -34,4 +35,5 @@
   padding: 0 25px 0 25px;
   margin: 0;
   letter-spacing: 0.01em;
+  flex-grow: 2;
 }
