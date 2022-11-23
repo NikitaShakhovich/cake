@@ -1,9 +1,9 @@
 .section-header {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: flex-start;
+  //align-items: center;
   z-index: 20;
   padding: 0;
 }
@@ -12,10 +12,14 @@
   max-width: 562px;
   text-align: center;
   padding: 170px 0 236px 100px;
+
+  @media (max-width: $full-hd) {
+    padding: 80px 0 152px 56px;
+  }
 }
 
 .section-header__subtitle {
-  @include font(300, 20px, 20px);
+  @include font(300, 20px, 30px);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: $bg-order;

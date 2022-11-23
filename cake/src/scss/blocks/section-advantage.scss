@@ -8,6 +8,10 @@
   @include flex;
   gap: 32px;
   padding: 100px 0 0 0;
+
+  @media (max-width: $full-hd) {
+    gap: 16px;
+  }
 }
 
 .section-advantage__item {
@@ -17,6 +21,10 @@
   align-self: stretch;
   text-align: center;
   max-width: 552px;
+
+  @media (max-width: $full-hd) {
+    min-width: 352px;
+  }
 }
 
 .section-advantage__icon {
@@ -32,8 +40,13 @@
 
 .section-advantage__description {
   @include font(400, 24px, 30px);
-  padding: 0 25px 0 25px;
+  padding: 0 25px;
   margin: 0;
   letter-spacing: 0.01em;
   flex-grow: 2;
+
+  @media (max-width: $full-hd) {
+    @include font(400, 20px, 30px);
+    padding: 0 5px;
+  }
 }

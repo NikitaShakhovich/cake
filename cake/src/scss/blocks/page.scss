@@ -17,12 +17,20 @@
 
 .page__header {
   position: relative;
+  width: 100%;
   margin: 0 auto;
   z-index: 4;
 }
 
 .page__header-logo {
-  margin: 0 305px 0 0;
+  display: block;
+  //margin: 0 305px 0 0;
+
+  @media (max-width: $full-hd) {
+    margin: 0 0 0 0;
+    width: 195px;
+    height: 48px;
+  }
 }
 
 .page__header-bg {
@@ -34,17 +42,29 @@
   background-image: url("../../img/bg-header.jpg");
   background-repeat: no-repeat;
   z-index: 2;
+  background-position: bottom;
+
+  @media (max-width: $full-hd) {
+    background-position: -145px 0px;
+    min-height: 840px;
+    background-size: cover;
+  }
 }
 
 .page__main {
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 .page__main-sections {
   max-width: 1920px;
   margin: 0 auto;
   padding: 150px 100px 100px 100px;
+
+  @media (max-width: $full-hd) {
+    padding: 150px 56px 100px 56px;
+  }
 }
 
 .page__main-title {
