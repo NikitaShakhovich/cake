@@ -13,6 +13,11 @@
   @media (max-width: $full-hd) {
     padding: 0 56px;
   }
+
+  @media (max-width: $desktop) {
+    padding: 0 24px;
+    height: 90px;
+  }
 }
 
 .nav__list {

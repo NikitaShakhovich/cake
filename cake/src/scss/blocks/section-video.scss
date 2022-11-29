@@ -15,6 +15,13 @@
   @include flex;
   transition: 0.5s;
 
+  @media (max-width: $desktop) {
+    width: 80px;
+    height: 80px;
+    top: 57%;
+    left: 43%;
+  }
+
   &:hover {
     background-color: $button-play-hover;
     transition: 0.5s;
@@ -25,4 +32,9 @@
   width: 44px;
   height: 50px;
   margin: 0 0 0 10px;
+
+  @media (max-width: $desktop) {
+    width: 25px;
+    height: 27px;
+  }
 }

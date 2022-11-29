@@ -12,6 +12,10 @@
   @media (max-width: $full-hd) {
     gap: 16px;
   }
+
+  @media (max-width: $desktop) {
+    flex-wrap: wrap;
+  }
 }
 
 .section-advantage__item {
@@ -24,6 +28,10 @@
 
   @media (max-width: $full-hd) {
     min-width: 352px;
+  }
+
+  @media (max-width: $desktop) {
+    max-width: 352px;
   }
 }
 

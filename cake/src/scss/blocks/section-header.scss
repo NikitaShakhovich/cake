@@ -16,6 +16,11 @@
   @media (max-width: $full-hd) {
     padding: 80px 0 152px 56px;
   }
+
+  @media (max-width: $desktop) {
+    padding: 62px 0 86px 24px;
+    max-width: 352px;
+  }
 }
 
 .section-header__subtitle {
@@ -24,6 +29,10 @@
   text-transform: uppercase;
   background-color: $bg-order;
   padding: 10px 25px;
+
+  @media (max-width: $desktop) {
+    @include font(300, 16px, 24px);
+  }
 }
 
 .section-header__title {
@@ -32,10 +41,20 @@
   letter-spacing: -1px;
   padding: 20px 0;
   margin: 0;
+
+  @media (max-width: $desktop) {
+    @include font(400, 100px, 118px);
+    padding: 10px 0;
+  }
 }
 
 .section-header__description {
   @include font(400, 24px, 36px);
   padding: 0 70px 70px 70px;
   margin: 0;
+
+  @media (max-width: $desktop) {
+    @include font(400, 16px, 24px);
+    padding: 0 36px 30px 36px;
+  }
 }

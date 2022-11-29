@@ -1,5 +1,9 @@
 .section-contacts {
 
+  @media (max-width: $desktop) {
+    width: 768px;
+    padding: 67px 24px 110px 24px;
+  }
 }
 
 .section-contacts__container {
@@ -13,6 +17,10 @@
     gap: 24px;
     align-items: normal;
     position: relative;
+  }
+
+  @media (max-width: $desktop) {
+    flex-direction: column;
   }
 }
 
@@ -59,4 +67,8 @@
     background-size: cover;
     border-radius: 20px;
    }
+
+  @media (max-width: $desktop) {
+    height: 493px;
+  }
 }

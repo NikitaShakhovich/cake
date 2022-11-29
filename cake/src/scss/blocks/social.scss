@@ -13,6 +13,11 @@
     bottom: 0;
     right: 0;
   }
+
+  @media (max-width: $desktop) {
+    bottom: -100px;
+    right: 250px;
+  }
 }
 
 .social__link-svg {
