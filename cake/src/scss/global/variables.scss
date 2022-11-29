@@ -1,13 +1,59 @@
 //COLORS
-$paleblue: #81b3d2;
+
+$bg-button: #B92240;
+$bg-button-hover: #CF735B;
+$button-play: #79BBDA;
+$button-play-hover: #CF735B;
+$button-slider: #79BBDA;
+$button-slider-hover: #CF735B;
+$start: #FFB800;
+$social-button-hover: #CF735B;
+$social-button: #2E363E;
+$footer: #B0C5D6;
+$svg-phone: #ffffff;
+$svg-phone-hover: #CF735B;
+
 //GRADIENT AND SHADOW
-$nav-last-two: rgba(0, 0, 0, 0.2);
+$shadow-card-cake: linear-gradient(89.87deg, rgba(25, 25, 25, 0) 0.11%, rgba(25, 25, 25, 0.08) 47.79%, rgba(25, 25, 25, 0.4) 59.87%, rgba(14, 14, 14, 0.6) 67.37%, rgba(14, 14, 14, 0.8) 80.1%);
+$bg-order: rgba(176, 197, 214, 0.4);
 //BORDER
-$nav-border: rgba(1, 1, 1, 0.2);
-// SVG COLORS
-$svg-mobile-rest: #5c6870;
+$border-input: #B92240;
+$border-input-hover: #CF735B;
+$border-feedback: #B0C5D6;
+//FONTS COLORS
+$main-font: #2E363E;
+$second-font: #ffffff;
+$hover-font: #CF735B;
+$hash-font: #79BBDA;
+$cake-font: #79BBDA;
+$cake-hover-font: #CF735B;
+$cake-active-font: #ffffff;
+$cake-all: #CF735B;
 // Viewports
-$tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width: 320px;
-$only-mobile-width: 767px;
+$tablet: 768px;
+$full-hd: 1919px;
+$desktop: 1200px;
+$mobile: 320px;
+$only-mobile: 767px;
+// font family
+$family: 'Montserrat', sans-serif;
+$family-second: 'RougeScript', sans-serif;
+$family-roboto: 'Roboto', sans-serif;
+// mixins
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin font($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}

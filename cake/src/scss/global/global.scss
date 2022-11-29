@@ -23,3 +23,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+picture {
+  line-height: 0;
+}
+
+p {
+  word-wrap: break-word;
+}

@@ -1,0 +1,40 @@
+.section-video {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 144px;
+  height: 144px;
+  border-radius: 100px;
+  background-color: $button-play;
+  @include flex;
+  transition: 0.5s;
+
+  @media (max-width: $desktop) {
+    width: 80px;
+    height: 80px;
+    top: 57%;
+    left: 43%;
+  }
+
+  &:hover {
+    background-color: $button-play-hover;
+    transition: 0.5s;
+
+  }
+}
+.section-video__icon-play {
+  width: 44px;
+  height: 50px;
+  margin: 0 0 0 10px;
+
+  @media (max-width: $desktop) {
+    width: 25px;
+    height: 27px;
+  }
+}

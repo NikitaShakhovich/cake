@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+  @include font(600, 24px, 36px);
+  text-transform: uppercase;
+  color: $second-font;
+  border-radius: 10px;
+  background-color: $bg-button;
+  box-shadow: 0 4px 4px $bg-order;
+  border: none;
+  padding: 20px 60px;
+  transition: 0.5s;
+
+  @media (max-width: $desktop) {
+    padding: 10px 60px;
+  }
+
+  &--link {
+    color: $second-font;
+
+    @media (max-width: $desktop) {
+      @include font(600, 16px, 24px);
+    }
+  }
+
+  &--order {
+    width: 100%;
+
+    @media (max-width: $desktop) {
+      padding: 20px 60px;
+    }
+  }
+
+  &:hover {
+    background-color: $bg-button-hover;
+    transition: 0.5s;
+  }
+
+}

@@ -9,6 +9,9 @@ export const svgSprit = () => {
             }))
         )
         .pipe(svgSprite({
+            svg: {
+                namespaceClassnames: false
+            },
             mode: {
                 stack: {
                     // Спрайт создастся в папке по адресу...
