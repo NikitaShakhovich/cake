@@ -13,6 +13,12 @@
   //@media (max-width: $full-hd) {
   //  background-position: -355px 0;
   //}
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+    min-height: 536px;
+    background-size: cover;
+  }
 }
 
 .section-order__title {
@@ -28,6 +34,11 @@
     @include font(700, 30px, 45px);
     padding: 30px 0;
   }
+
+  @media (max-width: $desktop) {
+    text-align: center;
+  }
+
 }
 
 .section-order__container {
@@ -42,6 +53,10 @@
   @media (max-width: $desktop) {
     width: 352px;
   }
+
+  @media (max-width: $tablet) {
+    width: 328px;
+  }
 }
 
 .section-order__block {
@@ -52,6 +67,10 @@
 
   @media (max-width: $desktop) {
     width: 352px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 328px;
   }
 }
 

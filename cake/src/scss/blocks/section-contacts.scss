@@ -4,6 +4,12 @@
     width: 768px;
     padding: 67px 24px 110px 24px;
   }
+
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    padding: 67px 16px 110px 16px;
+  }
 }
 
 .section-contacts__container {
@@ -30,12 +36,20 @@
   @media (max-width: $full-hd) {
     max-width: 542px;
   }
+
+  @media (max-width: $tablet) {
+    max-width: 328px;
+  }
 }
 
 .section-contacts__title {
   @include font(600, 24px, 36px);
   margin: 0;
   padding: 0 0 15px 0;
+
+  @media (max-width: $tablet) {
+    @include font(600, 18px, 27px);
+  }
 }
 
 .section-contacts__description {
@@ -43,6 +57,10 @@
   letter-spacing: 0.01em;
   margin: 0;
   padding: 0 0 50px 0;
+
+  @media (max-width: $tablet) {
+    @include font(400, 18px, 27px);
+  }
 
   &--phone {
     display: block;
@@ -70,5 +88,9 @@
 
   @media (max-width: $desktop) {
     height: 493px;
+  }
+
+  @media (max-width: $tablet) {
+    background-position: center;
   }
 }

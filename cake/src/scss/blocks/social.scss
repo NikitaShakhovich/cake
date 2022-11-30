@@ -18,6 +18,10 @@
     bottom: -100px;
     right: 250px;
   }
+
+  @media (max-width: $tablet) {
+    right: 45px;
+  }
 }
 
 .social__link-svg {

@@ -15,7 +15,7 @@ $svg-phone-hover: #CF735B;
 
 //GRADIENT AND SHADOW
 $shadow-card-cake: linear-gradient(89.87deg, rgba(25, 25, 25, 0) 0.11%, rgba(25, 25, 25, 0.08) 47.79%, rgba(25, 25, 25, 0.4) 59.87%, rgba(14, 14, 14, 0.6) 67.37%, rgba(14, 14, 14, 0.8) 80.1%);
-$bg-order: rgba(176, 197, 214, 0.4);
+$bg-order: rgb(176, 197, 214);
 //BORDER
 $border-input: #B92240;
 $border-input-hover: #CF735B;
@@ -30,7 +30,7 @@ $cake-hover-font: #CF735B;
 $cake-active-font: #ffffff;
 $cake-all: #CF735B;
 // Viewports
-$tablet: 768px;
+$tablet: 767px;
 $full-hd: 1919px;
 $desktop: 1200px;
 $mobile: 320px;
