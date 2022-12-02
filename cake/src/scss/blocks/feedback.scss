@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  padding: 73px 0 80px 0;
+  padding: 60px 0 80px 0;
   margin: 0;
   gap: 32px;
 
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 29px 30px 29px 30px;
+  padding: 29px 30px 25px 30px;
 
   @media (max-width: $full-hd) {
     gap: 10px;
@@ -62,8 +62,13 @@
 }
 
 .feedback__avatar {
-  width: 61px;
+  width: 95px;
   height: auto;
+
+  @media (max-width: $tablet) {
+    width: 61px;
+    height: auto;
+  }
 }
 
 .feedback__information {
@@ -79,6 +84,7 @@
   font-family: $family-roboto;
   margin: 0;
   padding: 11px 0 9px 0;
+  letter-spacing: -1px;
 
   @media (max-width: $full-hd) {
     @include font(700, 18px, 27px);
@@ -97,6 +103,13 @@
   }
 }
 
+.feedback__instagram {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 10px 0 0 0;
+}
+
 .feedback__svg {
   fill: $social-button;
   stroke: $social-button;
@@ -108,6 +121,9 @@
   }
 
   .feedback__score & {
+    fill: $start;
+    stroke: $start;
+
     @media (max-width: $full-hd) {
       width: 16px;
       height: 16px;
@@ -119,10 +135,21 @@
     stroke: $social-button-hover;
     transition: 0.6s;
   }
+
+  &:active {
+    fill: $social-button;
+    stroke: $social-button;
+    transition: 0.6s;
+  }
+}
+
+.feedback__score {
+  display: flex;
+  gap: 4px;
 }
 
 .feedback__main {
-  padding: 29px 30px 29px 30px;
+  padding: 0 30px 15px 30px;
   flex-grow: 2;
 
   @media (max-width: $full-hd) {
@@ -150,7 +177,7 @@
   font-family: $family-roboto;
   letter-spacing: 0.04em;
   margin: 0;
-  padding: 0;
+  padding: 30px 0 0 0;
   word-break: break-word;
 
   @media (max-width: $full-hd) {
@@ -160,6 +187,18 @@
 
 .feedback__link {
   color: $hash-font;
+  transition: 0.6s;
+
+  &:hover {
+    color:  $hover-font;
+    transition: 0.6s;
+  }
+
+  &:active {
+    transition: 0.6s;
+    color: $hash-font;
+  }
+
 }
 
 .feedback__like {
@@ -182,17 +221,29 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  @include font(600, 20px, 30px);
-  letter-spacing: 0.01em;
+  @include font(600, 24px, 36px);
 
   @media (max-width: $desktop) {
     white-space: pre-line;
   }
-}
 
+  @media (max-width: $tablet) {
+    @include font(600, 20px, 30px);
+  }
+}
 
 .feedback__item-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.feedback__photo {
+  border-radius: 0 0 20px 20px;
+}
+
+.feedback__like-count,
+.feedback__comment-count {
+  padding: 0;
+  margin: 0;
 }

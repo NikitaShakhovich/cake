@@ -2,7 +2,7 @@
   position: relative;
   width: 1920px;
   overflow: hidden;
-  padding: 0;
+  padding: 135px 0 100px 0;
 
   @media (max-width: $full-hd) {
     width: 1200px;
@@ -29,7 +29,7 @@
 
 .section-menu__slider {
   list-style: none;
-  padding: 0 0 0 0;
+  padding: 60px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -37,7 +37,7 @@
   align-items: center;
   gap: 32px;
   position: relative;
-  left: -1200px;
+  left: -1215px;
 
   @media (max-width: $full-hd) {
     gap: 16px;
@@ -74,6 +74,7 @@
     top: 0;
     right: 0;
     background: transparent;
+    border-radius: 10px;
     background-image: linear-gradient(180deg, rgba(25, 25, 25, 0) 0.12%, rgba(25, 25, 25, 0) 69.39%, rgba(14, 14, 14, 0.24) 81.87%, rgba(14, 14, 14, 0.8) 99.89%);
     opacity: 0.8;
     /* transform: rotate(90deg); */
@@ -120,6 +121,7 @@
   width: 100%;
   height: auto;
   position: absolute;
+  border-radius: 10px;
 }
 
 .section-menu__cake-all {
@@ -139,7 +141,7 @@
 .section-menu__cake-text {
   position: absolute;
   z-index: 5;
-  padding: 490px 0 0 0;
+  padding: 500px 0 0 0;
   width: 100%;
   transition: 0.6s;
 
@@ -175,6 +177,10 @@
   .section-menu__cake:hover & {
     color: $hover-font;
   }
+
+  .section-menu__cake:active & {
+    color: $cake-active-font;
+  }
 }
 
 .section-menu__cake-description {
@@ -205,12 +211,37 @@
 
 .section-menu__cake-param {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 0 8px;
+  margin: 0;
 }
 
 .section-menu__cake-weight {
   @include font(600, 20px, 30px);
   margin: 0;
   padding: 0;
+}
+
+.section-menu__cake-more {
+  display: flex;
+}
+
+.section-menu__cake-less {
+  display: flex;
+}
+
+.section-menu__cake-svg {
+  fill: $button-slider;
+
+  &:hover {
+    fill: $button-slider-hover;
+  }
+
+  &:active {
+    fill: $social-slider-active;
+  }
 }
 
 .section-menu__cake-price {
@@ -237,8 +268,8 @@
   }
 
   &--left {
-    top: 370px;
-    left: 46px;
+    top: 550px;
+    left: 45px;
     transform: rotate(-180deg);
   }
 
@@ -249,8 +280,8 @@
   }
 
   &--right {
-    top: 370px;
-    right: 55px;
+    top: 550px;
+    right: 40px;
   }
 }
 

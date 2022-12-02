@@ -7,7 +7,7 @@
   margin: 0;
   @include flex;
   gap: 32px;
-  padding: 100px 0 0 0;
+  padding: 62px 0 0 0;
 
   @media (max-width: $full-hd) {
     gap: 16px;
@@ -42,16 +42,17 @@
 
 .section-advantage__title {
   @include font(600, 24px, 36px);
-  padding: 15px 0 10px 0;
+  padding: 0 0 10px 0;
   margin: 0;
 }
 
 .section-advantage__description {
-  @include font(400, 24px, 30px);
-  padding: 0 25px;
+  @include font(400, 20px, 30px);
+  padding: 0 50px;
   margin: 0;
   letter-spacing: 0.01em;
   flex-grow: 2;
+  white-space: pre-line;
 
   @media (max-width: $full-hd) {
     @include font(400, 20px, 30px);
