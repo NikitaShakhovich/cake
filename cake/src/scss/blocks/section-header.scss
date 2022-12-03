@@ -5,25 +5,31 @@
   //justify-content: flex-start;
   //align-items: center;
   z-index: 20;
-  padding: 0;
+  padding: 170px 100px 235px 100px;
+
+
+  @media (max-width: $full-hd) {
+    padding: 80px 56px 152px 56px;
+  }
 }
 
 .section-header__container {
-  max-width: 606px;
+  max-width: 552px;
   text-align: center;
-  padding: 175px 0 235px 145px;
+  //padding: 175px 0 235px 145px;
 
   @media (max-width: $full-hd) {
-    padding: 80px 0 152px 56px;
+    //padding: 80px 0 152px 56px;
+    max-width: 536px;
   }
 
   @media (max-width: $desktop) {
-    padding: 62px 0 86px 24px;
+    //padding: 62px 0 86px 24px;
     max-width: 352px;
   }
 
   @media (max-width: $tablet) {
-    padding: 20px 0 25px 0;
+    //padding: 20px 0 25px 0;
     margin: 0 auto;
   }
 }
@@ -33,13 +39,21 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: $bg-order;
-  padding: 12px 25px;
+  padding: 10px 25px;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  //@media (max-width: $full-hd) {
+  //
+  //}
 
   @media (max-width: $desktop) {
     @include font(300, 16px, 24px);
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $tablet) {
     background-color: $bg-order-2;
   }
 
@@ -49,7 +63,7 @@
   font-family: $family-second;
   @include font(400, 150px, 176px);
   letter-spacing: -1px;
-  padding: 30px 0 15px 0;
+  padding: 20px 0 15px 0;
   margin: 0;
 
   @media (max-width: $desktop) {

@@ -87,10 +87,10 @@
   padding: 130px 100px 105px 100px;
 
   @media (max-width: $full-hd) {
-    padding: 150px 56px 100px 56px;
+    padding: 132px 56px 50px 56px;
   }
 
-  @media (max-width: $full-hd) {
+  @media (max-width: $desktop) {
     padding: 67px 24px 50px 24px;
   }
 
@@ -159,6 +159,7 @@
   gap: 20px;
   @include font(400, 20px, 30px);
   letter-spacing: 0.01em;
+  padding: 30px 0 0 0;
 
   @media (max-width: $desktop) {
     @include font(400, 14px, 21px);
@@ -172,7 +173,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  gap: 96px;
+  gap: 100px;
 
   @media (max-width: $tablet) {
     flex-direction: column;
@@ -192,7 +193,6 @@
 
 .page__footer-text {
   margin: 0;
-  padding: 30px 0 0 0;
   color: $main-font;
   transition: 0.6s;
 

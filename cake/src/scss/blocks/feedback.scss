@@ -10,6 +10,7 @@
 
   @media (max-width: $full-hd) {
     gap: 16px;
+    padding: 60px 0 30px 0;
   }
 
   @media (max-width: $tablet) {
@@ -53,7 +54,7 @@
 
   @media (max-width: $full-hd) {
     gap: 10px;
-    padding: 29px 20px 29px 20px;
+    padding: 10px 20px 15px 20px;
   }
 }
 
@@ -63,11 +64,11 @@
 
 .feedback__avatar {
   width: 95px;
-  height: auto;
+  height: 95px;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $full-hd) {
     width: 61px;
-    height: auto;
+    height: 61px;
   }
 }
 
@@ -88,6 +89,7 @@
 
   @media (max-width: $full-hd) {
     @include font(700, 18px, 27px);
+    padding: 11px 0 3px 0;
   }
 }
 
@@ -153,7 +155,7 @@
   flex-grow: 2;
 
   @media (max-width: $full-hd) {
-    padding: 29px 20px 29px 20px;
+    padding: 5px 20px 20px 20px;
   }
 }
 
@@ -168,7 +170,7 @@
 
   @media (max-width: $full-hd) {
     @include font(400, 18px, 27px);
-    padding: 0 20px 29px 20px;
+    padding: 0 20px 25px 20px;
   }
 }
 
@@ -182,6 +184,8 @@
 
   @media (max-width: $full-hd) {
     @include font(400, 14px, 21px);
+    padding: 18px 0 0 0;
+    white-space: break-spaces;
   }
 }
 
@@ -204,11 +208,19 @@
 .feedback__like {
   @include flex;
   gap: 15px;
+
+  @media (max-width: $full-hd) {
+    gap: 10px;
+  }
 }
 
 .feedback__comment {
   @include flex;
   gap: 15px;
+
+  @media (max-width: $full-hd) {
+    gap: 10px;
+  }
 }
 
 .feedback__share {
@@ -223,12 +235,13 @@
   text-align: center;
   @include font(600, 24px, 36px);
 
-  @media (max-width: $desktop) {
-    white-space: pre-line;
+  @media (max-width: $full-hd) {
+    @include font(600, 20px, 30px);
+    letter-spacing: 0.01em;
   }
 
-  @media (max-width: $tablet) {
-    @include font(600, 20px, 30px);
+  @media (max-width: $desktop) {
+    white-space: pre-line;
   }
 }
 

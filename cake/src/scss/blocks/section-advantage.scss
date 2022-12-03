@@ -44,6 +44,10 @@
   @include font(600, 24px, 36px);
   padding: 0 0 10px 0;
   margin: 0;
+
+  @media (max-width: $full-hd) {
+    padding: 5px 0 10px 0;
+  }
 }
 
 .section-advantage__description {

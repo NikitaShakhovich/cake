@@ -10,9 +10,11 @@
   min-height: 988px;
   margin: 0 auto;
 
-  //@media (max-width: $desktop) {
-  //  min-height: 838px;
-  //}
+  @media (max-width: $full-hd) {
+    min-height: 838px;
+    margin: 105px 0 0 0;
+    //padding: 206px 56px 50px 56px;
+  }
 
   @media (max-width: $tablet) {
     justify-content: center;
@@ -27,7 +29,7 @@
   margin: 0;
 
   @media (max-width: $full-hd) {
-    padding: 50px 33px 80px 33px;
+    padding: 35px 33px 80px 33px;
   }
 
   @media (max-width: $desktop) {
@@ -48,6 +50,7 @@
 
   @media (max-width: $full-hd) {
     width: 536px;
+    padding: 0;
   }
 
   @media (max-width: $desktop) {

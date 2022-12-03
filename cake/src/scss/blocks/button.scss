@@ -30,6 +30,10 @@
   &--order {
     width: 100%;
 
+    @media (max-width: $full-hd) {
+      height: 65px;
+    }
+
     @media (max-width: $desktop) {
       padding: 20px 60px;
     }
