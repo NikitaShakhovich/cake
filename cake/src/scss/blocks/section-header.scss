@@ -11,6 +11,10 @@
   @media (max-width: $full-hd) {
     padding: 80px 56px 152px 56px;
   }
+
+  @media (max-width: $desktop) {
+    padding: 63px 24px 85px 24px;
+  }
 }
 
 .section-header__container {
@@ -51,6 +55,8 @@
 
   @media (max-width: $desktop) {
     @include font(300, 16px, 24px);
+    width: 204px;
+    padding: 10px 10px;
   }
 
   @media (max-width: $tablet) {

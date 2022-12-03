@@ -16,10 +16,18 @@
     //padding: 206px 56px 50px 56px;
   }
 
+  @media (max-width: $desktop) {
+    margin: 0;
+    min-height: 738px;
+    background-position: 41% 50%;
+    padding: 155px 24px 80px 24px;
+  }
+
   @media (max-width: $tablet) {
     justify-content: center;
     min-height: 536px;
     background-size: cover;
+    padding: 155px 16px 80px 16px;
   }
 }
 
@@ -88,6 +96,11 @@
   box-shadow: 0 4px 4px rgba(40, 22, 22, 0.25);
   background: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
+
+  @media (max-width: $desktop) {
+    height: 65px;
+    padding: 0 0 0 17px;
+  }
 
   &:hover {
     border-color: $border-input-hover;

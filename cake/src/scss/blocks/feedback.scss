@@ -1,3 +1,10 @@
+.feedback {
+
+  @media (max-width: $desktop) {
+    padding: 0px 24px 55px 24px;
+  }
+}
+
 .feedback__list {
   list-style: none;
   display: flex;
@@ -11,6 +18,10 @@
   @media (max-width: $full-hd) {
     gap: 16px;
     padding: 60px 0 30px 0;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 5px 0 33px 0;
   }
 
   @media (max-width: $tablet) {

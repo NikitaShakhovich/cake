@@ -34,6 +34,7 @@
 
   @media (max-width: $desktop) {
     width: 45px;
+    height: 39px;
   }
 
   &--small {
@@ -91,7 +92,7 @@
   }
 
   @media (max-width: $desktop) {
-    padding: 67px 24px 50px 24px;
+    padding: 30px 24px 80px 24px;
   }
 
   @media (max-width: $tablet) {
@@ -146,6 +147,10 @@
   width: 100%;
   background-color: $footer;
 
+  @media (max-width: $desktop) {
+    padding: 0 24px 0 24px;
+  }
+
   @media (max-width: $tablet) {
     padding: 20px 16px 0 16px;
   }
@@ -163,6 +168,7 @@
 
   @media (max-width: $desktop) {
     @include font(400, 14px, 21px);
+    gap: 10px;
   }
 }
 
@@ -174,6 +180,10 @@
   margin: 0;
   padding: 0;
   gap: 100px;
+
+  @media (max-width: $desktop) {
+    gap: 40px;
+  }
 
   @media (max-width: $tablet) {
     flex-direction: column;

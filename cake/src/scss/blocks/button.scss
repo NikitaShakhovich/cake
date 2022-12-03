@@ -11,7 +11,7 @@
   transition: 0.5s;
 
   @media (max-width: $desktop) {
-    padding: 10px 60px;
+    padding: 3px 60px;
   }
 
   @media (max-width: $tablet) {
@@ -36,12 +36,17 @@
 
     @media (max-width: $desktop) {
       padding: 20px 60px;
+      height: 66px;
     }
 
     @media (max-width: $tablet) {
       display: inline-block;
       @include font(600, 20px, 30px);
     }
+  }
+
+  &--order-form {
+    padding: 14px 60px;
   }
 
   &:hover {

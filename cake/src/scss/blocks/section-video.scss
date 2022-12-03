@@ -13,6 +13,11 @@
   @media (max-width: $full-hd) {
     padding: 62px 0 0 0;
   }
+
+  @media (max-width: $desktop) {
+    padding: 5px 0 0 0;
+  }
+
 }
 
 .section-video__play {
