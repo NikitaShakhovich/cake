@@ -18,6 +18,11 @@
     padding: 10px 0 0 0;
     gap: 55px 16px;
   }
+
+  @media (max-width: $tablet) {
+    gap: 45px 16px;
+    padding: 40px 0 0 0;
+  }
 }
 
 .section-advantage__item {

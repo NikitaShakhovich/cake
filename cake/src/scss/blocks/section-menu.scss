@@ -15,7 +15,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 0;
+    padding: 40px 0 60px 0;
   }
 }
 
@@ -52,6 +52,10 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px 0 0 0;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 40px 0 0 0;
   }
 }
 
@@ -156,6 +160,10 @@
     padding: 422px 0 0 0;
   }
 
+  @media (max-width: $tablet) {
+    padding: 392px 0 0 0;
+  }
+
   .section-menu__cake:hover & {
     padding: 390px 0 0 0;
     transition: 0.6s;
@@ -240,6 +248,11 @@
   @media (max-width: $desktop) {
     padding: 26px 0 22px 0;
   }
+
+  @media (max-width: $tablet) {
+    padding: 19px 0 23px 0;
+  }
+
 }
 
 .section-menu__cake-param {

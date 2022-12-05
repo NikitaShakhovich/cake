@@ -9,18 +9,19 @@
   margin: 0;
 
   @media (max-width: $full-hd) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    //position: absolute;
+    //bottom: 0;
+    //right: 0;
   }
 
   @media (max-width: $desktop) {
-    bottom: -120px;
-    right: 240px;
+    //bottom: -120px;
+    //right: 240px;
   }
 
   @media (max-width: $tablet) {
-    right: 45px;
+    justify-content: center;
+    padding: 0;
   }
 }
 

@@ -14,10 +14,10 @@
     padding: 3px 60px;
   }
 
-  @media (max-width: $tablet) {
-    display: flex;
-    margin: 0 auto;
-  }
+  //@media (max-width: $tablet) {
+  //  display: flex;
+  //  margin: 0 auto;
+  //}
 
   &--link {
     color: $second-font;
@@ -42,11 +42,18 @@
     @media (max-width: $tablet) {
       display: inline-block;
       @include font(600, 20px, 30px);
+      padding: 15px 60px;
+      height: 61px;
     }
   }
 
   &--order-form {
     padding: 14px 60px;
+
+    @media (max-width: $tablet) {
+      @include font(600, 20px, 30px);
+      padding: 17px 60px;
+    }
   }
 
   &:hover {

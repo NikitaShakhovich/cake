@@ -18,6 +18,9 @@
     padding: 5px 0 0 0;
   }
 
+  @media (max-width: $desktop) {
+    padding: 40px 0 0 0;
+  }
 }
 
 .section-video__play {

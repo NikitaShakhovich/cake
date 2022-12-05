@@ -18,6 +18,11 @@
     padding: 0 24px;
     height: 90px;
   }
+
+  @media (max-width: $tablet) {
+    padding: 0 16px;
+    height: 75px;
+  }
 }
 
 .nav__list {
@@ -61,6 +66,10 @@
   @media (max-width: $desktop) {
     min-width: 167px;
     justify-content: flex-start;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: flex-end;
   }
 }
 

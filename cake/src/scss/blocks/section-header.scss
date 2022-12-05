@@ -15,6 +15,10 @@
   @media (max-width: $desktop) {
     padding: 63px 24px 85px 24px;
   }
+
+  @media (max-width: $tablet) {
+    padding: 33px 16px 35px 16px;
+  }
 }
 
 .section-header__container {

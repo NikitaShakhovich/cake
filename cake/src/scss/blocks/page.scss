@@ -96,7 +96,7 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 67px 0 50px 0;
+    padding: 40px 0 65px 0;
   }
 }
 
@@ -113,6 +113,18 @@
   @media (max-width: $desktop) {
     @include font(700, 30px, 45px);
     padding: 40px 0 110px 0;
+  }
+
+  @media (max-width: $tablet) {
+    //padding: 40px 20px 75px 20px;
+    padding: 0;
+    height: auto;
+  }
+
+  .section-contacts & {
+    @media (max-width: $tablet) {
+      padding: 0 16px;
+    }
   }
 
   &--blue {
@@ -136,6 +148,12 @@
 
     @media (max-width: $tablet) {
       background-image: none;
+    }
+  }
+
+  &--two-lines-word {
+    @media (max-width: $tablet) {
+      padding: 0 20px 0 20px;
     }
   }
 }
@@ -170,6 +188,11 @@
     @include font(400, 14px, 21px);
     gap: 10px;
   }
+
+  @media (max-width: $tablet) {
+    padding: 0;
+    gap: 20px;
+  }
 }
 
 .page__footer-confidentiality {
@@ -198,6 +221,7 @@
 
   @media (max-width: $tablet) {
     @include font(400, 10px, 15px);
+    padding: 0 0 20px 0;
   }
 }
 
