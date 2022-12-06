@@ -17,6 +17,7 @@
 
   @media (max-width: $desktop) {
     width: 100%;
+    padding: 70px 16px 50px;
   }
 
   @media (max-width: $tablet) {
@@ -60,7 +61,7 @@
   }
 
   @media (max-width: $desktop) {
-    gap: 50px 16px;
+    gap: 50px 12px;
     left: 0;
     flex-wrap: wrap;
     justify-content: center;
@@ -132,6 +133,7 @@
 
   @media (max-width: $tablet) {
     width: 328px;
+
   }
 
   @media (max-width: 703px) {
