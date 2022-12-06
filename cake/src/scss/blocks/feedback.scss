@@ -1,9 +1,5 @@
 .feedback {
 
-  @media (max-width: $desktop) {
-    padding: 0 24px 55px 24px;
-  }
-
   @media (max-width: $tablet) {
     padding: 35px 16px 43px 16px;
   }
@@ -15,23 +11,23 @@
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  padding: 60px 0 80px 0;
+  padding: 110px 0 60px 0;
   margin: 0;
   gap: 32px;
 
   @media (max-width: $full-hd) {
     gap: 16px;
-    padding: 60px 0 30px 0;
+    padding: 110px 0 24px 0;
   }
 
   @media (max-width: $desktop) {
-    padding: 5px 0 33px 0;
+    padding: 70px 0 25px 0;
   }
 
   @media (max-width: $tablet) {
     gap: 40px;
     flex-wrap: wrap;
-    padding: 40px 0 40px 0;
+    padding: 38px 0 40px 0;
   }
 }
 
@@ -43,10 +39,6 @@
   flex-direction: column;
   align-self: stretch;
   width: 33%;
-
-  //@media (max-width: $full-hd) {
-  //  max-width: 352px;feedback__item
-  //}
 
   @media (max-width: $desktop) {
     width: 50%;
@@ -203,7 +195,7 @@
 
   @media (max-width: $full-hd) {
     @include font(400, 18px, 27px);
-    padding: 0 20px 25px 20px;
+    padding: 0 20px 20px 20px;
   }
 
   @media (max-width: $tablet) {
@@ -216,7 +208,7 @@
   font-family: $family-roboto;
   letter-spacing: 0.04em;
   margin: 0;
-  padding: 30px 0 0 0;
+  padding: 25px 0 0 0;
   word-break: break-word;
 
   @media (max-width: $full-hd) {
@@ -246,12 +238,18 @@
   }
 
   &--love-marzipan {
+    @media (max-width: $desktop) {
+      display: inline-block;
+      margin: 5px 0 0 0;
+      letter-spacing: 0.01em;
+      padding: 0;
+      text-align: center;
+    }
+
     @media (max-width: $tablet) {
       display: block;
       margin: 7px 0 0 0;
-      letter-spacing: 0.01em;
       padding: 0 0 0 11px;
-      text-align: center;
     }
   }
 }
@@ -304,9 +302,14 @@
 
 .feedback__photo {
   border-radius: 0 0 20px 20px;
+  max-height: 550px;
+
+  @media (max-width: $full-hd) {
+    min-height: 352px;
+  }
 
   @media (max-width: $tablet) {
-    height: 328px;
+    min-height: 328px;
   }
 }
 

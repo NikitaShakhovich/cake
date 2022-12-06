@@ -11,19 +11,15 @@
   transition: 0.5s;
 
   @media (max-width: $desktop) {
-    padding: 3px 60px;
+    padding: 10px 60px;
   }
-
-  //@media (max-width: $tablet) {
-  //  display: flex;
-  //  margin: 0 auto;
-  //}
 
   &--link {
     color: $second-font;
 
     @media (max-width: $desktop) {
       @include font(600, 16px, 24px);
+      display: block;
     }
   }
 
@@ -31,24 +27,27 @@
     width: 100%;
 
     @media (max-width: $full-hd) {
-      height: 65px;
-    }
-
-    @media (max-width: $desktop) {
-      padding: 20px 60px;
+      padding: 15px 60px;
       height: 66px;
     }
 
     @media (max-width: $tablet) {
       display: inline-block;
       @include font(600, 20px, 30px);
-      padding: 15px 60px;
       height: 61px;
     }
   }
 
   &--order-form {
-    padding: 14px 60px;
+    padding: 20px 60px;
+
+    @media (max-width: $full-hd) {
+      padding: 19px 60px;
+    }
+
+    @media (max-width: $full-hd) {
+      padding: 13px 60px;
+    }
 
     @media (max-width: $tablet) {
       @include font(600, 20px, 30px);
@@ -60,5 +59,4 @@
     background-color: $bg-button-hover;
     transition: 0.5s;
   }
-
 }

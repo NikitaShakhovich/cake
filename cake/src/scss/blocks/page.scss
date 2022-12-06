@@ -58,7 +58,6 @@
   background-position: bottom;
 
   @media (max-width: $full-hd) {
-    //background-position: -145px 0px;
     min-height: 840px;
     background-size: cover;
     background-position: center;
@@ -85,14 +84,15 @@
 .page__main-sections {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 130px 100px 105px 100px;
+  padding: 150px 100px 100px 100px;
+  position: relative;
 
   @media (max-width: $full-hd) {
-    padding: 132px 56px 50px 56px;
+    padding: 150px 56px 50px 56px;
   }
 
   @media (max-width: $desktop) {
-    padding: 30px 24px 80px 24px;
+    padding: 70px 24px 50px 24px;
   }
 
   @media (max-width: $tablet) {
@@ -100,23 +100,55 @@
   }
 }
 
-.page__main-title {
-  @include font(700, 40px, 60px);
-  width: 100%;
+.page__main-title-bg {
+  position: absolute;
+  width: 728px;
   height: 109px;
+  background-image: url("../../img/bg-title-blue.png");
   background-repeat: no-repeat;
-  background-position: 50%;
-  padding: 17px 0 110px 0;
-  margin: 0;
-  text-align: center;
+  top: 135px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+
+  &--beige {
+    background-image: url("../../img/bg-title-beige.png");
+
+    @media (max-width: $tablet) {
+      background-image: none;
+    }
+  }
+
+
+  @media (max-width: $full-hd) {
+    top: 140px;
+  }
 
   @media (max-width: $desktop) {
-    @include font(700, 30px, 45px);
-    padding: 40px 0 110px 0;
+    background-size: 77%;
+    background-position: center;
+    top: 50px;
   }
 
   @media (max-width: $tablet) {
-    //padding: 40px 20px 75px 20px;
+    background-image: none;
+    width: 0;
+  }
+}
+
+.page__main-title {
+  @include font(700, 40px, 60px);
+  margin: 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: $desktop) {
+    @include font(700, 30px, 45px);
+  }
+
+  @media (max-width: $tablet) {
     padding: 0;
     height: auto;
   }
@@ -124,30 +156,6 @@
   .section-contacts & {
     @media (max-width: $tablet) {
       padding: 0 16px;
-    }
-  }
-
-  &--blue {
-    background-image: url("../../img/bg-title-blue.png");
-
-    @media (max-width: $desktop) {
-      background-size: 80%;
-    }
-
-    @media (max-width: $tablet) {
-      background-image: none;
-    }
-  }
-
-  &--beige {
-    background-image: url("../../img/bg-title-beige.png");
-
-    @media (max-width: $desktop) {
-      background-size: 80%;
-    }
-
-    @media (max-width: $tablet) {
-      background-image: none;
     }
   }
 

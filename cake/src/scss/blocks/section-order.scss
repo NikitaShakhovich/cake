@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  //align-items: center;
   background-image: url("../../img/bg-offer.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -13,18 +12,16 @@
   @media (max-width: $full-hd) {
     min-height: 838px;
     margin: 105px 0 0 0;
-    //padding: 206px 56px 50px 56px;
   }
 
   @media (max-width: $desktop) {
-    margin: 0;
     min-height: 738px;
     background-position: 41% 50%;
     padding: 155px 24px 80px 24px;
+    margin: 0 0 52px 0;
   }
 
   @media (max-width: $tablet) {
-    //justify-content: center;
     min-height: 536px;
     background-size: cover;
     padding: 33px 16px 54px 16px;
@@ -34,11 +31,11 @@
 
 .section-order__title {
   @include font(700, 40px, 60px);
-  padding: 65px 115px 80px 115px;
+  padding: 45px 115px 80px 115px;
   margin: 0;
 
   @media (max-width: $full-hd) {
-    padding: 35px 33px 80px 33px;
+    padding: 15px 33px 80px 33px;
   }
 
   @media (max-width: $desktop) {
@@ -99,12 +96,16 @@
   background: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 
+  @media (max-width: $full-hd) {
+    padding: 0 0 0 15px;
+  }
+
   @media (max-width: $desktop) {
     height: 65px;
     padding: 0 0 0 17px;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: $tablet) {
     @include font(600, 20px, 30px);
   }
 

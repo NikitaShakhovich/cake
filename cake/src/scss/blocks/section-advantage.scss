@@ -1,21 +1,18 @@
-.section-advantage {
-
-}
-
 .section-advantage__list {
   list-style: none;
   margin: 0;
   @include flex;
   gap: 32px;
-  padding: 62px 0 0 0;
+  padding: 110px 0 0 0;
 
   @media (max-width: $full-hd) {
+    padding: 110px 0 0 0;
     gap: 16px;
   }
 
   @media (max-width: $desktop) {
     flex-wrap: wrap;
-    padding: 10px 0 0 0;
+    padding: 70px 0 0 0;
     gap: 55px 16px;
   }
 
@@ -53,6 +50,10 @@
   margin: 0;
 
   @media (max-width: $full-hd) {
+    padding: 8px 0 10px 0;
+  }
+
+  @media (max-width: $tablet) {
     padding: 5px 0 10px 0;
   }
 }
