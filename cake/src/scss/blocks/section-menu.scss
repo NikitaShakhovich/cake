@@ -226,11 +226,11 @@
   }
 
   .section-menu__cake:hover & {
-    color: $hover-font;
+    color: $cake-active-font;
   }
 
   .section-menu__cake:active & {
-    color: $cake-active-font;
+    color: $cake-font;
   }
 }
 
